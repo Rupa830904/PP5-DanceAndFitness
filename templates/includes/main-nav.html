@@ -5,9 +5,9 @@
                 All Products
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="all-products-link">
-                <a href="" class="dropdown-item">By Price</a>
-                <a href="" class="dropdown-item ">By Category</a>
-                <a href="" class="dropdown-item">All Products</a>
+                <a href="{% url 'products' %}?sort=price" class="dropdown-item">By Price</a>
+                <a href="{% url 'products' %}?sort=category" class="dropdown-item ">By Category</a>
+                <a href="{% url 'products' %}" class="dropdown-item">All Products</a>
             </div>
         </li>
 
@@ -16,9 +16,9 @@
                 Dance
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="clothing-link">
-                <a href="" class="dropdown-item" class="dropdown-item">Indian</a>
-                <a href="" class="dropdown-item">Western</a>
-                <a href="" class="dropdown-item">Fitness</a>
+                <a href="{% url 'products' %}?category=Indian Dance" class="dropdown-item" class="dropdown-item">Indian</a>
+                <a href="{% url 'products' %}?category=Western Dance" class="dropdown-item">Western</a>
+                <a href="{% url 'products' %}?category=Fitness" class="dropdown-item">Fitness</a>
             </div>
         </li>
 
@@ -27,21 +27,16 @@
                 Training
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="homeware-link">
-                <a href="" class="dropdown-item">GYM</a>
-                <a href="" class="dropdown-item">Sports</a>
-                <a href="" class="dropdown-item">Group Training</a>
+                <a href="{% url 'products' %}?category=Training" class="dropdown-item">GYM</a>
+                <a href="{% url 'products' %}?category=sports" class="dropdown-item">Sports</a>
+                <a href="{% url 'products' %}?category=Group training" class="dropdown-item">Group Training</a>
             </div>
         </li>
 
         <li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold nav-link text-black" href="#" id="specials-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a class="logo-font font-weight-bold nav-link text-black" href="{% url 'products' %}?category=Food" id="specials-link">
                 Go Green
             </a>
-            <div class="dropdown-menu border-0" aria-labelledby="specials-link">
-                <a href="" class="dropdown-item">Breakfast</a>
-                <a href="" class="dropdown-item">Lunch</a>
-                <a href="" class="dropdown-item">Salads</a>
-            </div>
         </li>
     </ul>
 </div>
