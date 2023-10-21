@@ -41,3 +41,23 @@ def remove_from_cart(request, item_id):
     request.session['cart'] = cart
     return render(request, 'cart.html')
     #return HttpResponse(status=200)
+
+def adjust_cart(request, item_id):
+    """Adjust the quantity of the specified product to the specified amount"""
+
+    #product = get_object_or_404(Package, pk=item_id)
+    #quantity = int(request.POST.get('quantity'))
+    #cart[item_id] = quantity
+    #messages.success(request, f'Updated {product.name} quantity to {bag[item_id]}')
+    
+    #request.session['cart'] = cart
+    return render(request, 'update_quantity.html')
+    #return redirect(reverse('view_cart'))
+def update_cart(request, item_id):
+    """ Add a quantity of the specified product to the shopping bag """
+
+    quantity = int(request.POST.get('quantity'))
+    cart[item_id] = quantity
+
+    request.session['cart'] = cart
+    return redirect(redirect_url)
