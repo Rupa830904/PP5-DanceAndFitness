@@ -2,7 +2,7 @@ from django.contrib import admin
 
 # Register your models here.
 
-from .models import Package, Category
+from .models import Package, Category, Review
 
 # Register your models here.
 
@@ -22,5 +22,17 @@ class CategoryAdmin(admin.ModelAdmin):
         'name',
     )
 
+
+class ReviewAdmin(admin.ModelAdmin):
+    list_display = (
+        'product',
+        'rating',
+        'comment',
+        'createdAt',
+    )
+
+    ordering = ('createdAt',)
+
 admin.site.register(Package, PackageAdmin)
 admin.site.register(Category, CategoryAdmin)
+admin.site.register(Review, ReviewAdmin)

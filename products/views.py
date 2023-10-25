@@ -2,7 +2,7 @@ from django.shortcuts import render, redirect, reverse, get_object_or_404
 from django.contrib import messages
 from django.db.models import Q
 from django.db.models.functions import Lower
-from .models import Package, Category
+from .models import Package, Category, Review
 
 # Create your views here.
 
@@ -59,9 +59,15 @@ def product_detail(request, package_id):
     """ A view to show individual product details """
 
     product = get_object_or_404(Package, pk=package_id)
+    # obj = Package.objects.all().first()
+    num_reviews= product.num_of_reviews()
+    rating= product.average_rating()
+    print(rating)
 
     context = {
         'product': product,
+        'rating': rating,
+        'reviews': num_reviews
     }
 
     return render(request, 'product_detail.html', context)
