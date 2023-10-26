@@ -15,7 +15,7 @@ def checkout(request):
         return redirect(reverse('products'))
     
     current_cart = cart_contents(request)
-    total = current_cart('total')
+    total = current_cart['total']
     stripe_total = round(total * 100)
 
     order_form = OrderForm()
