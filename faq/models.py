@@ -4,7 +4,7 @@ from django.contrib.auth import get_user_model
 # Create your models here.
 
 
-class contact(models.Model):
+class Contact(models.Model):
     name = models.CharField(max_length=80)
     email = models.EmailField()
     question = models.TextField()

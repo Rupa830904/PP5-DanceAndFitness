@@ -1,31 +1,31 @@
 from django import forms
 from django.forms.widgets import DateInput
 from django.core.exceptions import ValidationError, ObjectDoesNotExist
-from .models import contact
+from .models import Contact
 from django.contrib.auth.models import User
 
 
 class ContactForm(forms.ModelForm):
     """ Form to ask a question"""
     class Meta:
-        model = contact
-        fields = ['name', 'email', 'question']
+        model = Contact
+        fields = ['name', 'subscribe', 'email', 'question']
         name = forms.CharField()
         question = forms.CharField()
-        subscribe = forms.BooleanField()
+        subscribe = forms.CheckboxInput()
         email = forms.CharField()
 
         labels = {
             'name': 'name',
             'email': 'Email',
             'question': 'question',
-            'subscribr': 'subscribe',
+            'subscribe': 'Do you want to sunscribe our newsletters :',
         }
 
         def __init__(self, *args, **kwargs):
           super(ContactForm, self).__init__(*args, **kwargs)
-          if self.instance and self.instance.subscribe is False:
+          if self.instance and self.fields.subscribe is False:
               self.fields['email'].disabled = True # still displays the field in the template
             # del self.fields['job'] # removes field from form and template
-          if self.instance and self.instance.subscribe is True:
+          if self.instance and self.fields.subscribe is True:
               self.fields['email'].disabled = False
