@@ -33,6 +33,9 @@ class Package(models.Model):
         # return Review.objects.filter('product=self').aggregate(Avg('rating'))['rating__avg']
         return Review.objects.filter(product=self).aggregate(Avg('rating'))['rating__avg']
     
+    def show_reviews(self):
+        return Review.objects.values_list('comment').filter(product=self)
+    
 
 class Review(models.Model):
     product = models.ForeignKey('Package', on_delete=models.SET_NULL, null=True)

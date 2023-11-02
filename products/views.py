@@ -1,8 +1,10 @@
-from django.shortcuts import render, redirect, reverse, get_object_or_404
+from django.shortcuts import render, redirect, reverse, get_object_or_404, HttpResponse
 from django.contrib import messages
 from django.db.models import Q
 from django.db.models.functions import Lower
 from .models import Package, Category, Review
+import pandas as pd
+from django_pandas.io import read_frame
 
 # Create your views here.
 
@@ -62,12 +64,20 @@ def product_detail(request, package_id):
     # obj = Package.objects.all().first()
     num_reviews= product.num_of_reviews()
     rating= product.average_rating()
+    reviews= product.show_reviews()
+    df= read_frame(reviews,fieldnames=['comment'])
+    #df= reviews.to_dataframe(['comment'], index_col=['reviews'])
+    table_reviews = df.transpose().to_html()
+
     print(rating)
+    print(df)
+    print(reviews)
 
     context = {
         'product': product,
         'rating': rating,
-        'reviews': num_reviews
+        'num_reviews': num_reviews,
+        'reviews': df,
     }
 
     return render(request, 'product_detail.html', context)
