@@ -32,6 +32,9 @@
                     <p class="lead mb-0 text-left font-weight-bold">SEK{{ product.price }} </p>
                     <p>Rating: {{rating}}</p>
                     <p>Numer of reviews : {{num_reviews}} </p>
+                    {% if user.is_authenticated %}
+                    <a href="{% url 'review' product.id %}" class="remove-item text-danger float-right" id="review"><small>Write Review</small></a>
+                    {% endif %}
                     <input type="button" name="reviews" value="Show reviews" onclick="ShowDiv()" />
                     <div id="myDiv" style="display:none;" class="answer_list" >{{reviews}}</div>
                     {% if product.category %}

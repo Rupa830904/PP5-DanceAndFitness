@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block page_header %}
+    <div class="container header-container">
+        <div class="row">
+            <div class="col"></div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block content %}
+
+{% load crispy_forms_tags %}
+
+<div class="container">
+    <form method="POST" enctype="multipart/form-data" class="p-2 form">
+        <h1 class="text-center">Please share your opinion about this product</h1>
+        {% csrf_token %}
+        {{ review_form.rating | as_crispy_field }}
+        {{ review_form.comment | as_crispy_field }}
+        <div class="text-center">
+            <button type="submit" class="btn btn-primary mt-2">Post</button>
+        </div>
+    </form>
+</div>
+
+{%endblock%}
