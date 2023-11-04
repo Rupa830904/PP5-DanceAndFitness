@@ -8,7 +8,7 @@ class ReviewForm(forms.ModelForm):
     """ Form to ask a question"""
     class Meta:
         model = Review
-        fields = ['rating', 'comment']
+        fields = ['product', 'rating', 'comment']
         rating = forms.IntegerField()
         comment = forms.CharField()
 

@@ -14,8 +14,9 @@
 
 <div class="container">
     <form method="POST" enctype="multipart/form-data" class="p-2 form">
-        <h1 class="text-center">Please share your opinion about this product</h1>
+        <h1 class="text-center">Please share your opinion about our products</h1>
         {% csrf_token %}
+        {{ review_form.product | as_crispy_field }}
         {{ review_form.rating | as_crispy_field }}
         {{ review_form.comment | as_crispy_field }}
         <div class="text-center">
@@ -23,5 +24,13 @@
         </div>
     </form>
 </div>
+
+{% if messages %}
+<ul class="messages">
+    {% for message in messages %}
+    <li  {% if message.tags %} class=" {{ message.tags }} " {% endif %}> {{ message }} </li>
+    {% endfor %}
+</ul>
+{% endif %}
 
 {%endblock%}

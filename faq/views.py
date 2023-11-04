@@ -7,7 +7,13 @@ from .forms import ContactForm
 
 def contact(request):
 
-    contact_form = ContactForm() 
+    contact_form = ContactForm()
+
+    if request.method == 'POST':
+        contact_form = ContactForm(request.POST)
+        if contact_form.is_valid():
+           contact_form.save()
+           messages.success(request, 'Thanks for contacting us. we will get back to you soon')
     
     template = 'contact.html'
     context = {
