@@ -24,6 +24,13 @@
             </div>
         </div>
         <div class="row">
+            <div class="col text-center mt-3">
+                    {% if user.is_superuser %}
+                    <a href="{% url 'add_product' %}" class="add-item text-danger float-right" id="add"> <small>Add Package</small></a>
+                    {% endif %}
+            </div>>
+        </div>>
+        <div class="row">
                 <div class="row">
                     {% for product in products %}
                         <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">

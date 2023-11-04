@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+
+{% block page_header %}
+    <div class="container header-container">
+        <div class="row">
+            <div class="col"></div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block content %}
+
+{% load crispy_forms_tags %}
+
+<div class="container">
+    <form method="POST" enctype="multipart/form-data" class="p-2 form">
+        <h1 class="text-center">Add new Package</h1>
+        {% csrf_token %}
+        {{ product_form.name | as_crispy_field }}
+        {{ product_form.category | as_crispy_field }}
+        {{ product_form.price | as_crispy_field }}
+        {{ product_form.description | as_crispy_field }}
+        {{ product_form.package_image | as_crispy_field }}
+        <div class="text-center">
+            <button type="submit" class="btn btn-primary mt-2">Post</button>
+        </div>
+    </form>
+</div>
+
+{% if messages %}
+<ul class="messages">
+    {% for message in messages %}
+    <li  {% if message.tags %} class=" {{ message.tags }} " {% endif %}> {{ message }} </li>
+    {% endfor %}
+</ul>
+{% endif %}
+
+{%endblock%}

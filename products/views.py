@@ -4,7 +4,7 @@ from django.db.models import Q
 from django.db.models.functions import Lower
 from .models import Package, Category, Review
 import pandas as pd
-from .forms import ReviewForm
+from .forms import ReviewForm, ProductForm
 from django_pandas.io import read_frame
 
 # Create your views here.
@@ -97,6 +97,24 @@ def review(request, package_id):
     context = {
         'product': product,
         'review_form': review_form,
+
+    }
+
+    return render(request, template, context)
+
+def add_product(request):
+    
+    model = Package
+    product_form = ProductForm()
+    if request.method == 'POST':
+        product_form = ProductForm(request.POST)
+        if product_form.is_valid():
+           product_form.save()
+           messages.success(request, 'Package added successfully')
+    
+    template = 'add_product.html'
+    context = {
+        'product_form': product_form,
 
     }
 
