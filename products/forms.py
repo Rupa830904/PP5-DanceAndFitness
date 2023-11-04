@@ -30,3 +30,16 @@ class ProductForm(forms.ModelForm):
             'name': 'name',
             'price': 'price',
         }
+
+class Editproduct(forms.ModelForm):
+    """ Form to ask a question"""
+    class Meta:
+        model = Package
+        fields = ['price','description']
+        description = forms.CharField()
+        price = forms.DecimalField()
+
+        labels = {
+            'description': 'description',
+            'price': 'price',
+        }

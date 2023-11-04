@@ -44,6 +44,9 @@
                     </p>
                     {% endif %}
                     <p class="mt-3">{{ product.description }}</p>
+                    {% if user.is_superuser %}
+                    <a href="{% url 'edit_product' product.id %}" class="edit-item text-danger float-right" id="edit"><small>Update package details</small></a>
+                    {% endif %}
                     <form class="form" action="{% url 'add_to_cart' product.id %}" method="POST">
                         {% csrf_token %}
                         <div class="form-row">
