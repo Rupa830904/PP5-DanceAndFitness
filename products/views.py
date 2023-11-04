@@ -3,7 +3,7 @@ from django.contrib import messages
 from django.db.models import Q
 from django.db.models.functions import Lower
 from .models import Package, Category, Review
-import pandas as pd
+#import pandas as pd
 from .forms import ReviewForm, ProductForm, Editproduct
 from django_pandas.io import read_frame
 
