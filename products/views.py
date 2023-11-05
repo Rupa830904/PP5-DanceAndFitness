@@ -70,15 +70,15 @@ def product_detail(request, package_id):
     #df= reviews.to_dataframe(['comment'], index_col=['reviews'])
     table_reviews = df.transpose().to_html()
 
-    print(rating)
-    print(df)
+    #print(rating)
+    #print(df)
     print(reviews)
 
     context = {
         'product': product,
         'rating': rating,
         'num_reviews': num_reviews,
-        'reviews': df,
+        'reviews': reviews,
     }
 
     return render(request, 'product_detail.html', context)

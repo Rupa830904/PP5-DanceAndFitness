@@ -3,6 +3,12 @@
 <!doctype html>
 <html lang="en">
   <head>
+   
+    <title>{% block head_title %}{% endblock %}
+        {% block extra_head %}
+        {% endblock %}
+    </title>
+   
 
     {% block meta %}
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -106,7 +112,7 @@
     </nav>
 </div>
 <div id="delivery-banner" class="row text-center">
-    <div class="col bg-black text-white">
+    <div class="col bg-black text-black">
         <h4 class="logo-font my-1">Happy Health Happy Life</h4>                
     </div>            
 </div>

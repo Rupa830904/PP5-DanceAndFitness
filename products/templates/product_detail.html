@@ -36,7 +36,25 @@
                     <a href="{% url 'review' product.id %}" class="remove-item text-danger float-right" id="review"><small>Write Review</small></a>
                     {% endif %}
                     <input type="button" name="reviews" value="Show reviews" onclick="ShowDiv()" />
-                    <div id="myDiv" style="display:none;" class="answer_list" >{{reviews}}</div>
+                    <div id="myDiv" style="display:none;" class="answer_list" >
+                    {% for review in reviews %}
+                    <table class="table">
+                        <thead class="thead-dark">
+                          <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Comment</th>>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th scope="row">{{ forloop.counter }}</th>
+                            <td>{{review.0}}</td>>
+                          </tr>
+                        </tbody>
+                    </table>
+                    {% endfor %}
+                    </div>
+                    
                     {% if product.category %}
                     <p class="small mt-1 mb-0">
                             <i class="fas fa-tag mr-1"></i>{{ product.category }}
