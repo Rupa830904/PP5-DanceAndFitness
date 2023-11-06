@@ -2,12 +2,7 @@
 
 <!doctype html>
 <html lang="en">
-  <head>
-   
-    <title>{% block head_title %}{% endblock %}
-        {% block extra_head %}
-        {% endblock %}
-    </title>
+<head>
    
 
     {% block meta %}
@@ -124,7 +119,11 @@
 
 {% block page_header %}
 {% endblock %}
-
+<title>{% block head_title %}{% endblock %}
+    {% block extra_head %}
+    {% endblock %}
+</title>
+ 
 {% block content %}
 {% endblock %}
 

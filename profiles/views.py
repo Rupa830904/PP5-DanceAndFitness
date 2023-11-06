@@ -3,6 +3,7 @@ from django.contrib import messages
 
 from .models import UserProfile
 from .forms import UserProfileForm
+from checkout.models import Order
 
 
 def profile(request):
@@ -17,6 +18,7 @@ def profile(request):
 
     form = UserProfileForm(instance=profile)
     orders = profile.orders.all()
+    print(orders)
 
     template = 'profile.html'
     context = {
