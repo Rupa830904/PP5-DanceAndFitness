@@ -28,3 +28,20 @@ def profile(request):
     }
 
     return render(request, template, context)
+
+def order_history(request, order_number):
+    order = get_object_or_404(Order, order_number=order_number)
+
+    order_date = order.date
+    order_total = order.order_total
+    template = 'checkout_success.html'
+    print(order.date)
+    print(order)
+    context = {
+        'order_date': order_date,
+        'order_total': order_total,
+        'from_profile': True,
+        'order': order
+    }
+
+    return render(request, template, context)
