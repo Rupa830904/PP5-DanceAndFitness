@@ -124,17 +124,15 @@ def edit_product(request,package_id):
     
     #model = Package
     product = get_object_or_404(Package, pk=package_id)
-    edit_form = Editproduct(initial={'name': product.name})
+    edit_form = Editproduct()
     if request.method == 'POST':
-        edit_form = Editproduct(request.POST)
+        edit_form = Editproduct(request.POST, instance=product)
         if edit_form.is_valid():
            edit_form.save()
            messages.success(request, 'Package updated successfully')
-    
     template = 'edit_product.html'
     context = {
         'edit_form': edit_form,
-
     }
 
     return render(request, template, context)
