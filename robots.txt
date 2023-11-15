@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /accounts/
+Disallow: /checkout/
+Sitemap: https://dancenfitness-708b83044c2d.herokuapp.com/sitemap.xml
