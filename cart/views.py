@@ -15,15 +15,18 @@ def view_cart(request):
 
 def add_to_cart(request, item_id):
     """ Add a quantity of the specified product to the shopping bag """
-
+    
+    product = Package.objects.get(pk=item_id)
     quantity = int(request.POST.get('quantity'))
     redirect_url = request.POST.get('redirect_url', 'view_cart')
     cart = request.session.get('cart', {})
 
     if item_id in list(cart.keys()):
         cart[item_id] += quantity
+        messages.success(request, f'Added {quantity} of {product.name} to your cart')
     else:
         cart[item_id] = quantity
+        messages.success(request, f'Added {product.name} to your cart')
 
     request.session['cart'] = cart
     return redirect(redirect_url)
@@ -36,7 +39,7 @@ def remove_from_cart(request, item_id):
     cart = request.session.get('cart', {})
 
     cart.pop(item_id)
-    messages.success(request, f'Removed {product.name} from your bag')
+    messages.success(request, f'Removed {product.name} from your cart')
 
     request.session['cart'] = cart
     return render(request, 'cart.html')
