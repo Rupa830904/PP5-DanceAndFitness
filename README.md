@@ -35,55 +35,47 @@ This site was created respecting the Five Planes Of Website Design:<br>
 |   EPIC                                ||                                User Story                                                   |
 | :-------------------------------------|--|:------------------------------------------------------------------------------------------- |
 |**Base Setup**             |  ||
-|                                       || As a user, I want to understand the purpose of the website from the first interaction with its content |             
-|                                       || As a user, I want to be able to easily use the site functionalities on all viewports, so I can shop the products from any device|
-|                                       || As a user, I want to see a footer with relevant information and documents|
-|                                       || As a user, I want to be able to access a navigation menu at any time, so I can easily navigate through the website content|
-|                                       || As a user, I want to be able search through site products by entering a key word|
+|                                       || As an admin I need to create a base.html so that I can load the template in all other pages. |             
+|                                       || As a developer I need to deploy the base project in Heroku app so that I can avoid unexpected issues|
+|                                       || As a user I should be redirected to 404.html so that page not found error is handled|
+|                                       || As a user I can browse through the navigation bar so that I can sort/search thrpugh the packages easily|
+|                                       || As a developer I need to setup cloudinary storage so that I can store media files|
+|                                       || As a user I should provide user a 500.html page so that users are redirected to the home page in case of internal server errors|
 |**AUTENTHICATION**   |  || 
-|                                       || As a user, I want to be able to register on the website|
+|                                       || As a user I must be able to register to the danceandfitness* so that I can buy packages|
 |                                       || As a user, I want to be able to confirm my account with an email|
-|                                       || As a user/admin, I want to be able to authenticate using only email and password|
-|                                       || As a user, I want to be able to reset my password in case I forgot it|
+|                                       || As a dveloper I want to implement allauth functions so that an user can register/login and perfrom other tasks sign in tasks|
 |                                       || As a user/admin, I want to be able to log out at any time|
 |**PRODUCTS**                           |  ||
-|                                       || US - As a user, I want to see a catalog with all the products and also grouped by categories|
-|                                       || US - As a user, I want to be able to apply filters and to sort the listed products, so I can easily find the ones I am interested to buy|
-|                                       || US - As a user, I want to be able to see the stock availability for low stock products|
-|                                       || US - As a user, I want to see a page with full specifications for every product, so I can easily decide which one I would want to buy|
-|                                       || US - As a user, I want to be able to add any product to the shopping bag in a selected quantity|
-|                                       || US - As an admin, I want to be able to edit product details|
-|                                       ||  US - As an admin, I want to be able to delete products from the catalog, so it reflect the existent stock|
-|                                       || US - As an admin, I want to be able to add new products to catalog, so it reflects the existent stock|
-|**RATING&REVIEWS**                            |  ||
-|                                       || US - As a user, I want to be able to see all the reviews added for any product, so I can easily make an opinion about its quality|
-|                                       || US - As a logged in user, I want to be able to add a review for any product I want|
-|                                       || US - As a logged in user, I want to be able to see and edit my reviews added to products|
-|                                       || US - As a user, I want to be able to see a general review of every product|   
+|                                       || As an user I can view the product catalogue so that I can choose the right product|
+|                                       || As a **user ** I can read the product details so that I can choose the package|
+|                                       || As a user I can search a package in home page so that I can find a package easily|
+|                                       || As a user I can sort packages so that I can choose packages|
+|                                       || As an admin I can add new package so that I can add new offers for user|
+|                                       || As a super user I can update the price and description of a package so that I can change the offer to make it more attractive|
 |**CART**                                |  ||
-|                                       || US - As a user, I want to see all the products I added to the shopping bag|
-|                                       || US - As a user, I want to be able to add/remove from the wishlist any product from the shopping bag|
-|                                       || US - As a user, I want to see all the details about the price for the order|
-|                                       || US - As a user, I want to be able to remove a product from the shopping bag|
-|                                       || US - As a user, I want to be able to edit the quantity of the products|
-|                                       || US - As a user, I want that all the discounts announced on the website to be applied properly|
-|                                       || US - As a user, I want to be able to add my vouchers to the order|
+|                                       || As a user I can add items to cart so that I can checkput when I am ready|
+|                                       || As a user I can update items in cart so that I can change my shopping list|
+|                                       || As a user I can remove item from cart so that I can remove item from my shopping list|
+|                                       || As a user I can back to shopping from cart so that my cart is updated each time I update my shopping items|
+|                                       || As a user I should be notfied when a item is added/updated/removed from cart so that I get a confirmation message|
 |**CHECKOUT&PAYMENT**                           |  ||
-|                                       || US - As a logged-in user, I want to be able to see and edit my default delivery details for the order|
-|                                       || US- As a user, I want to see the order summary with all the price details|
-|                                       || US - As a user, I want to be able to add my delivery details for the order|
-|                                       || US - As a user I want to be able to introduce my card details for payment|
+|                                       || As a user I can proceed to secure checkout so that I can buy the health packages|
+|                                       || As a user I can pay with my credit card so that I can buy the packages|
+|                                       || As a developer I need to setup stripe account so that I can manage user payment|
 |**USER MANAGEMENT**                       |  ||
-|                                       || US - As a logged in user, I want to be able to see and edit my delivery details|
-|                                       || US - As a logged-in user, I want to be able to see my orders history|
-|                                       || US - As a logged-in user, I want to see the full details for every order I placed on the website
+|                                       || As a user I can submit the contact form so that I can get in touch with the service provide also subscribe to newsletters|
+|                                       || As a user I need to I should be able to save personal details so that my profile is saved for every purchases|
+|                                       || As a user I can view my order history so that I know my previous purchases|
+|                                       || As a user I can view my order history so that I know my previous orders|
+|                                       || As a user I can see my order history under my profile so that I can see me previous order details|
 |**Testing & Documentation**                |  ||
-|                                       || US - As a user, I can easily navigate to the website's FAQs page.|
-|                                       || US -As a user, I can get all the answers to frequently asked questions about the bakeshop and their products without needing to contact them.|
+|                                       || As a developer I need to write readme.md so that I can clearly explain my project|
+|                                       || As a developer I must write a testing.md so that all my tests are well described|
 
 
 **Project Goal:**<br>
-Create an e-commerce application for DanceAndFitness that is useful for clients and staff members as well.
+Create an e-commerce application for DanceAndFitness that is useful for clients and site admins as well.
 
 **Project Objectives:**<br> 
 * To create a website with a simple and intuitive User Experience;
@@ -102,38 +94,31 @@ Create an e-commerce application for DanceAndFitness that is useful for clients 
 **Relevant content**<br>
 * Add a representative cover image;
 * Add the website title and details about its purpose;
-* Add a section that includes information about the center's name, description, location and contact details;
+* Add a section that includes information about the center's name, description, location and contact details; #TO DO
 * Make a clear and beautiful designed presentation of the menu elements;
 
 **Features for upgraded experience**<br>
 * Create a list with all the products and group them by category;
-* Create a Bag feature that allows the user to add, update and remove products from the shopping bag;
-* Create a Wishlist feature that gives the user the possibility to add and remove items from the wishlist;
+* Create a Cart feature that allows the user to add, update and remove products from the shopping cart;
 * Create a Review feature that displays all the reviews added for a product and allows the user to add and edit his review;
 * Create a Checkout feature for giving the user the possibility to complete an order on the website;
 * Create a Profile page for the user to add/update his delivery details and see his orders' history;
-* Create a Newsletter feature that allows the user to subscribe with his email;
-* Create a Voucher feature that offers the user a dicount code on account registration;
-* Create a page for the staff members to manage all the orders for all the users;
-* Create a feature for the staff members to add/edit products on the website;
+* Create a feature for the site admin to add/edit products on the website;
 
 ### Structure<hr>
 The structure of the website is divided into multiple pages and the content is displayed depending on authentication and client/admin type of user. <br>
 - **Register/Login** pages give the user the possibility to create an account and authenticate for accessing different features.<br>
-- **Logout** feature is a modal that helps user exit their current account;<br>
-- The **Home** page is visible for both types of users and includes relevant information about the websites' purpose and details a bout the bakeshop, location and contact;<br>
--The **All products** page displays a list with all the products available for selling;<br>
+- **Logout** feature is a drop down under account that helps user exit their current account;<br>
+- The **Home** page is visible for both types of users and provides a button the explore all packages<br>
+- The **All products** page displays the card with all the products available to book;<br>
 - The **Cakes** navigation link gives the user the possibility to access the list of products grouped by category, <b>Fresh Cream Cakes</b>, <b>Buttercream Cakes</b>, <b>Drip Cakes</b> and <b>Celebration Cakes</b>;<br>
-- The **Celebration/Occassion Cakes** page lists the products categorised as <em>Birthday</em>, <em>Wedding</em> and <em>Custom Made Cakes</em>;
-- The **Product details** page displays full specifications for a product and gives access to the <b>Review</b> feature. It also includes a feature for updating the shopping bag for users that are not admins. Staff members have access to the feature for editing/removing current product;<br>
-- The **Profile** page is only available for authenticated users that are not admins and gives access to personal delivery details and orders' history;<br>
-- The **Profile order details** page gives access to the user to full specifications only for orders placed by him.<br>
+- The **Product details** page displays full specifications for a package and gives access to the <b>Review</b> feature. It also includes a feature for  adding the product to cart;<br>
+- The **Profile** page is only available for authenticated users gives access to personal informations and orders' history;<br>
+- The **Profile order  history details** page gives access to the user to full specifications only for orders placed by him/her.<br>
 - The **Wishlist** page contains a list with all the products added by the user and cannot be accessed by guest or admin users;<br>
-- The **Bag** page displays all the items added in the shopping bag with associated features;<br>
+- The **Cart** page displays all the items added in the shopping bag with associated features also provides possibilities to add/remove/update product from cart;<br>
 - The **Checkout page** includes an order summary and a form for personal, delivery and payment details;<br>
 - The **Checkout success** page displays full specification for the successful order;<br>
-- The **Orders** page gives access only to staff members and displays all the bookings registered, grouped and filtered by day.<br>
-- The **Admin order details** page gives access only to staff members to full specifications for any order.<br><br>
 
 **FLOWCHARTS**<br>
 The Flowchart for my program was created using <b>LucidChart</b> to help me keep track and visually see how the system works. Due to the nature of development, and room for creativity, the final website has minor 
@@ -141,37 +126,10 @@ deviations from this flowchart. To be specific, the addition of three more featu
 <img src="media/flowchart.webp" ><br><br>
 
 ### Skeleton<hr>
-**Wireframes**<br>
-The wireframes for mobile and desktop were created with [Balsamiq](https://balsamiq.com/) tool. 
-
-<details>
-  <summary>Home</summary><br>
-  Desktop<br>
-<img src="media/wireframe_home_desktop.png" ><br>
-  Mobile<br>
-<img src="media/wireframe_home_mobile.png" ><br>
-</details>
-<details>
-  <summary> Products Page</summary><br>
-  Desktop<br>
-<img src="media/wireframe_products_desktop.png" ><br>
- Mobile<br>
-<img src="media/wireframe_products_mobile.png" ><br>
-</details>
-<details>
-  <summary> About us Page</summary><br>
-  Desktop<br>
-<img src="media/wireframe_aboutus_desktop.png" ><br>
- Mobile<br>
-<img src="media/wireframe_about_us.png" ><br>
-</details>
-<br><br>
 
 
 **Database**<br>
-The project uses the PostgreSQL relational database for storing the data.
-Due to the nature of development, and room for creativity, the final website has minor 
-deviations from this schema. To be specific, the addition of three more features: "About", "Faqs" and "Contact".<br>
+The project uses the PostgreSQL relational database for storing the data.<br>
 
 <details>
   <summary> Schema</summary>
@@ -196,8 +154,8 @@ All the colours were selected generated from the hero image using Coolors
 * The business model chosen for this project is <b>Business to Customer</b>, as the main purpose of the website is to deliver final products to customers. This model was implemented using an interactive, attractive and intuitive interface that gives the clients an upgraded experience for shopping.<br><br>
 <img src="media/b2c_diagram.png" width="60%">
 
-* The online bakeshop offers a diverse selections of baked products categorised as *All Products*, *Cakes*(Cakes are further sub-categorised to drip cakes, buttercream cakes, chocolate cakes and occassion cakes), *Desserts*, *Sweet Treats* and *Everyday Esssentials*. Customers can order any quantity of the products within the limit of available stock.
-* The bakeshop also have a Cork Bakeshop Cafe, where customers/clients can relax and enjoy their favourite sweet treats with a cold or hot beverage of their choice. They also have an option to purchase all their favourites as the cafe stock all the bakeshop products on site. 
+* The online bakeshop offers a diverse selections of dance and fitness packages categorised as *All Products*, *Dance* (Dances are further sub-categorised to Indian, western, and Fitness), *Training* (Trainings are further sub-categorised to GYM, Sports, and group trainings), *Recharge* (Reacharge are further sub-categorised to Food and Relax package).
+
 
 ## Marketing
 
@@ -205,10 +163,6 @@ All the colours were selected generated from the hero image using Coolors
 * The marketing strategy includes a Facebook business page that is intended to create a good image of the bakeshop by posting news and promotions available. By highly promoting the products and always adding new content, the page will increase its popularity and attract more and more customers to buy from the online store. The page can be accessed at [this link](https://www.facebook.com/profile.php?id=61553025716191).<br><br><br>
 *Note, this link may be broken as facebook regularly deletes inactive business pages.
 <img width="80%" src="media/facebook_screenshot.png">
-
-### Newsletter
-* Newsletter is also utilised as a marketing strategy in an attempt to improve customer engagement further, keeping them up to date and also incentivising them by running promotions on regular basis.<br><br>
-<img width="60%" src="media/newsletter_screenshot.png">
 
 ## Search Engine Optimisation
 
@@ -218,95 +172,80 @@ The purpose of the About Us page was not so much designed in mind to inform the 
 
 The initial keywords and phrases I came up with were:<br>
 ### Short Tail Keywords
- * Cakes Cork
- * cork bakeshop
- * sweet treats
- * desserts
- * wedding cakes
- * occasion cakes
- * birthday cakes
- * pies
- * doughnuts
- * drip cakes
- * chocolate cakes
- * elegant cakes
- * christening cake <br>
+ * Indian Dance
+ * Street Dance
+ * Modern Dance
+ * GYM
+ * Fitness
+ * Healthy Eating
+ * Spa
+ * Massages
+ * Group Training
+ * Zumba
+ * Aerobics
+ * Naturopathy
+ * Badminton <br>
 
 ### Long Tail Keywords
- * scrumptious cakes
- * shop cakes online
- * cake delivery in cork
- * custom-made cakes
+ * Dance and Fitness
+ * Health Packages
+ * Happy Health Happy Life
+ * Stay Healthy
 
 [Back to top ⇧](#overview)
 
 ## Agile Methodology
 This project was developed utilising the Agile Methodogy.<br>
- I prioritized features by labeling them such as "must-have", "could-have", "future enhancement", "backlog" and "bugs" among others and moved some less critical ones to future development. To guide my development process, I created user stories for both the admin/staff user and guests/clients/customers. These stories helped to define the features and functionalities that were most important to project's target audience.
+I prioritized features by labeling them such as "must-have", "could-have", "should have", and moved some less critical ones to future development. To guide my development process, I created user stories. These stories helped to define the features and functionalities that were most important to project's target audience.
 
 As a student solo developer who was learning a lot during development, I faced challenges in estimating the time required for each task and only had a basic concept of what I would be able to create at a given timeframe. Therefore, I kept things simple and focused on achievable goals. Aiming for Minimum Viable Product, or MVP. All the features and functionalities that I wanted to have but I didn't manage to finish because of time constraints were moved to "Future Enhancement". With the goal of implementing them on the projects future release.
 
-To keep track of progress, I used Github Projects(https://github.com/users/Aylamccarthy/projects/5). I used a kanban board (https://github.com/users/Aylamccarthy/projects/5/views/1?layout=board) divided into following sections: "to do", "in progress" "done", "backlog", "future enhancements" and "bugs" that allowed me to visualize all tasks and prioritize next steps. However, I could not find the "epics" feature in GitHub Projects, only milestones (it provides only [milestones and issues](https://docs.github.com/en/issues/tracking-your-work-with-issues/about-issues)). Epics are supposed to be larger in scope than milestones, representing a significant amount of work. Milestones, on the other hand, are meant to mark significant points in time in terms of project completion. In this document, I added epics, but on the project board, I used only [milestones]() to stay in order with GitHub's features.
+To keep track of progress, I used Github Projects(). I used a kanban board () divided into following sections: "to do", "in progress" "done" that allowed me to visualize all tasks and prioritize next steps. However, I could not find the "epics" feature in GitHub Projects, only milestones it provides only [milestones and issues](). Epics are supposed to be larger in scope than milestones, representing a significant amount of work. Milestones, on the other hand, are meant to mark significant points in time in terms of project completion. In this document, I added as epics, but on the project board, I used only [milestones]() to stay in order with GitHub's features.
 
 By using Agile methodology, I was able to stay organized, work efficiently and focused on delivering the most important features, while also allowing flexibility for future development. This experience gave me invaluable insight and lessons that I can apply to future projects.
 
-<img width="80%" src="media/agile_screenshot.png">
+<img width="80%" src="">
 <br> <br>
-<img width="80%" src="media/pp5_kanban_board.png">
-
-
-| Epic | Milestone | User stories |
-|------|-----------|--------------|
-| Epic 1: BASIC SITE FUNCTIONALITY| Milestone 1: Project SetUp |  [#1](https://github.com/Aylamccarthy/madisons-patisserie/issues/1) [#2](https://github.com/Aylamccarthy/madisons-patisserie/issues/2)
-|  |Milestone 2: Content and Navigation |[#3](https://github.com/users/Aylamccarthy/projects/5?pane=issue&itemId=38882996) [#4](https://github.com/users/Aylamccarthy/projects/5?pane=issue&itemId=38883390) 
-|   |Milestone 3: User Registration/Authentication   | [#5](https://github.com/users/Aylamccarthy/projects/5?pane=issue&itemId=38883534)  [#6](https://github.com/users/Aylamccarthy/projects/5?pane=issue&itemId=38884037) [#7](https://github.com/Aylamccarthy/madisons-patisserie/issues/7)
-| Epic 2: USER MANAGEMENT| Milestone 4 : Products | [#10](https://github.com/Aylamccarthy/madisons-patisserie/issues/10) [#11](https://github.com/Aylamccarthy/madisons-patisserie/issues/11)
-|   |Milestone 5: Reviews | [#12](https://github.com/Aylamccarthy/madisons-patisserie/issues/12) [#13](https://github.com/Aylamccarthy/madisons-patisserie/issues/13)
-|   |Milestone 6: Wishlist | [#14](https://github.com/Aylamccarthy/madisons-patisserie/issues/14) [#9](https://github.com/Aylamccarthy/madisons-patisserie/issues/9)
-| Epic 3: CONTENT MANAGEMENT| Milestone 8: Bag  | [#15](https://github.com/Aylamccarthy/madisons-patisserie/issues/15) [#16](https://github.com/Aylamccarthy/madisons-patisserie/issues/16)
-|   |Milestone 9: Checkout | [#17](https://github.com/Aylamccarthy/madisons-patisserie/issues/17) [#18](https://github.com/Aylamccarthy/madisons-patisserie/issues/18)
-| Epic 4: USER PROFILE and ADMIN| Milestone 9: User Profile| [#19](https://github.com/Aylamccarthy/madisons-patisserie/issues/19) [#20](https://github.com/Aylamccarthy/madisons-patisserie/issues/20)
-|   |Milestone 10:Admin Manage Orders| [#21](https://github.com/Aylamccarthy/madisons-patisserie/issues/21) [#22](https://github.com/Aylamccarthy/madisons-patisserie/issues/22) [#23](https://github.com/Aylamccarthy/madisons-patisserie/issues/23)
-| Epic 5: COMPREHENSIVE TESTING and PROJECT WRAP UP| Milestone 11: Comprehensive Testing and Code Validations| [#8](https://github.com/Aylamccarthy/madisons-patisserie/issues/8) [#24](https://github.com/Aylamccarthy/madisons-patisserie/issues/24)
-|   | Milestone 12: Refactoring and Final deployment| [#25](https://github.com/Aylamccarthy/madisons-patisserie/issues/25) [#26](https://github.com/Aylamccarthy/madisons-patisserie/issues/26)
-|  
+<img width="80%" src="">
 
 <details>
 <summary><strong>Sprints Details</strong></summary>
 
-* **Sprint 1 - SETUP**<br>
+* **Sprint 1**<br>
     -Setup Django<br>
+    -Setup Storage in cloudinary<br>
+    -Implement Allauth<br>
+    -Create Navbar<br>
+    -Search and view package<br>
     -Deploy on heroku<br><br>
-* **Sprint 2 - VIEWING AND NAVIGATION**<br>
-    -Add website name, logo, slogan and description<br>
-    -Choose colours, fonts and decorative images <br>
+* **Sprint 2**<br>
+    -Register New User<br>
+    -Create User Profile <br>
     -Create a navigation menu<br>
-    -Implement the search feature<br>
-    -Add footer with social media links
+    -View review and rating<br>
+    -Add , update and remove cart<br>
     <br><br>
-* **Sprint 3 - USER REGISTRATION/AUTENTHICATION + NEWSLETTER**<br>
-    -Implement the *Register* page using the django-allauth module<br>
-    -Implement the *Login* page using django-allauth module<br>
-    -Implement *Logout* modal using django-allauth module<br><br>
-    -Implement email confirmation using django-allauth module<br>
-    -Implement password reset using django-allauth module<br>
-    -Add a form for the users to subscribe to the newsletter
+* **Sprint 3**<br>
+    -See order history<br>
+    -Update Package Details by admin<br>
+    -Add Package Details by admin<br><br>
+    -Implement user option to read all reviewa<br>
+    -Implement user option to back to shopping<br>
+    -Implement user option to add product review<br>
     <br><br>
-* **Sprint 4 - PRODUCTS**<br>
-    -Create *Products* pages, with all items or grouped by category<br>
-    -Create a list of products<br> 
-    -Implement filtering and sorting features<br>
-    -Implement a feature for adding products to the shopping bag<br>
-    -Create *Product Details* page with full specifications<br>
+* **Sprint 4**<br>
+    -Add toasts for user notifications<br>
+    -view order histroy link<br> 
+    -Complete user payment<br>
+    -Complete user checkout<br>
+    -Complete user contact from submission<br>
     -Add a feature for adding products to the shopping bag from the *Details* page<br>
     -Implement feature for admin to delete product<br>
-    -Implement features for admin to add/update product<br>
-    -Add validation for add/update product forms
     <br><br>
-* **Sprint 5 - REVIEWS**<br>
-    -Implement a form for adding and updating reviews on the *Product Details* page<br>
-    -Add a section that displays all the reviews for the product<br>
-    -Implement feature for product's general rating
+* **Sprint 5**<br>
+    -Create 500.html page<br>
+    -Create 404.html<br>
+    -Write testing and readme.md
     <br><br>
 </details><br><br>
 
@@ -435,17 +374,9 @@ The *FAQs* page was created with the aim of providing the users all the relevant
 
 #### Toasts
 * Toasts appear in the top right-hand corner of the display informing the user of any actions they have performed.
-* The top part of the toast box will change colour depending on whether the message is portraying a successful action, general info, warning, or an error.<br><br>
 <img src="media/toasts.png" width="40%"><br><br>
 
 ### Future Feature Considerations<hr>
-
-* Because of increasing demand for bespoke wedding cakes, the bakeshop will implement a dedicated page specifically for wedding cakes and wedding related products. This feature will include a gallery of all the wedding cakes, customer testimonials, and a request a quote/call back form that the customers can fill out and send. This feature was planned to be implemented for this project but couldn't be done because of time constraints. It is also visible on the *Github Project* kanban board where iit is labelled as *could have* and *enhancement*.
-* Implementing a chat feature for communication between customers and staff members. This would be useful for any client that has an issue on the website and also will create a better and faster way of finding solutions. 
-
-* Creating a feature for easily sending email advertisement to the customers. This would be a default template form to be filled and the email will be automatically sent to the customers. 
-
-* Expanding the voucher feature by implementing a points reward system for loyal customers that shop frequently from the website. The customer will be rewarded points for every purchase, which they can convert into a voucher that can be redeem with their purchases.
 
 ## Responsive Layout and Design
 The project design has been adapted to all types of devices using Bootstrap predefined breakpoints. For intermediate devices where the design didn't fit accordingly, custom breakpoints were used.
@@ -460,34 +391,17 @@ The project design has been adapted to all types of devices using Bootstrap pred
 
 **Tested devices:**
 
-    - Moto G4 
     - iPhone SE 
-    - iPhone XR 
-    - iPhone 11 
-    - iPhone 13
-    - iPhone 5/SE 
-    - iPhone 6/7/8 
     - Ipad
-    - Ipad Air 
-    - Ipad Mini
-    - Ipad Pro 
-    - Pixel 5 
-    - Surface Duo 
-    - Surface Pro 7 
-    - Nest Hub 
-    - Nest Hub Max
-    - Samsung Galaxy S20 Ultra 
+    - Samsung Galaxy S22
     - Samsung Galaxy S8 
     - Galaxy Note 2 
-    - Galaxy Tab S4
-    - Asus Vivobook
 
 ## Tools Used
 
 [GitHub](https://github.com/) - used for hosting the source code of the program<br>
 [Gitpod](https://gitpod.io/workspaces) - for project development and testing the code<br>
 [Heroku](https://dashboard.heroku.com/) - used for deploying the project<br>
-[Balsamiq](https://balsamiq.com/wireframes/) - for creating the wireframes<br>
 [LucidChart](https://www.lucidchart.com/) - used for creating the Flowchart and Database relational schema<br>
 [Favicon.io](https://favicon.io/) - used for generating the website favicon<br>
 [Diffchecker](https://www.diffchecker.com/) - used for comparing the code<br>
@@ -500,43 +414,16 @@ The project design has been adapted to all types of devices using Bootstrap pred
 [CI Phython Linter](https://pep8ci.herokuapp.com/) - used for validating the python code<br>
 [HTML - W3C HTML Validator](https://validator.w3.org/#validate_by_uri+with_options) - used for validating the HTML<br>
 [CSS - Jigsaw CSS Validator](https://jigsaw.w3.org/css-validator/#validate_by_uri) - used for validating the CSS<br>
-[Chrome Del Tools](https://developer.chrome.com/docs/devtools/) - for continious debugging during the project development<br>
 [W.A.V.E.](https://wave.webaim.org/) - for testing accessibility<br>
-[AWS](https://aws.amazon.com/) - for storing media and static data<br>
+[CLOUDINARY](https://cloudinary.com/) - for storing media and static data<br>
 [ElephantSql](https://www.elephantsql.com/) - for hosting the PostgresSql database migrated from Heroku
 [pixelied](https://pixelied.com/convert/jpg-converter/jpg-to-webp) - for converting the images to webp format.
-LightHouse - for testing performance<br>
 Gmail - for sending emails using the SMTP server
 
 ### Python packages
 
-* django 
-* django-allauth
-* dj-database-url 
-* psycopg2-binary 
-* gunicorn 
-* heroku 
-* django-heroku 
-* boto3 
-* django-storages 
-* pylint 
-* pylint-django 
-* pillow 
-* django-url-tools 
-* django-url-tools-py3 
-* humanhash3 
-* django-countries 
-* stripe 
-* django-mathfilters 
-* django-phonenumber-field
-* django-coverage 
-* coverage 
-* pycodestyle 
-* django-url-tools 
-* django-url-tools-py3 
-* django-resized
-* flake8 
-* black
+*
+
 
 [Back to top ⇧](#overview)
 
@@ -562,43 +449,16 @@ installation was completed to make sure that everything is working correctly.
   os.environ["DATABASE_URL"] = "postgres://yourLinkFromDatabaseDashboard"
   ```
 
-## AWS
+## Cloudinary
 
-Amazon web services are used to store all static and media files. 
+Cloudinary storage is used to store all static and media files.
 
-#### S3
-1. First you will need to sign up to AWS which you can do [here](https://aws.amazon.com/).
-2. Once you have created an account and logged in, under the All Services>Storage menu, click the link that says S3.
-3. On the S3 page you will need to create a new bucket. To do this click the orange button that says 'Create Bucket'.
-4. Name the bucket and select the closest region to you. To keep things simple I recommend naming the bucket after your project's name.
-5. Under 'Object Ownership' select 'ACLs enabled' and leave the Object Ownership as Bucket owner preferred. 
-6. Uncheck the 'Block all public access' checkbox and check the warning box to acknowledge that the bucket will be made public, then click create bucket. 
-7. Once created, click the bucket's name and navigate to the properties tab. Scroll to the bottom and under 'Static website hosting' click 'edit' and change the Static website hosting option to 'enabled'. Copy the default values for the index and error documents and click 'save changes'.
-8. Now navigate to the permissions tab, scroll down to the Cross-origin resource sharing (CORS) section, click edit and paste in the following code:  
-    ```
-    [
-        {
-            "AllowedHeaders": [
-            "Authorization"
-            ],
-            "AllowedMethods": [
-            "GET"
-            ],
-            "AllowedOrigins": [
-            "*"
-            ],
-            "ExposeHeaders": []
-        }
-    ]
-    ```
-9. Then scroll back up to the 'Bucket Policy' section. Click 'edit' and then 'Policy generator'. This should open the AWS policy generator page.
-10. From here under the 'select type of policy' dropdown menu, select 'S3 Bucket Policy'. Then inside 'Principle' allow all principals by typing a *.
-11. From the 'Actions dropdown menu select 'Get object'. Then head back to the previous tab and locate the Bucket ARN number. Copy that, return to the policy generator and paste it in the field labelled Amazon Resource Name (ARN).
-12. Once that's completed click 'Add statement', then 'Generate Policy'. Copy the policy that's been generated and paste it into the bucket policy editor.
-13. Before you click save, add a '/*' at the end of your resource key. This is to allow access to all resources in this bucket.
-14. Once those changes are saved, scroll down to the Access control list (ACL) section and click 'edit'.
-15. Next to 'Everyone (public access)', check the 'list' checkbox. This will pop up a warning box that you will also have to check. Once that's done click 'save'. 
+1. Navigate to [Clodinary website](https://cloudinary.com/) log in to your account.
+2. Go to 'Setting' and copy the user API secret.
 
+```python
+  os.environ["CLOUDINARY_URL"]="cloudinary://yoursecretfromcloudinary"
+  ```
 
 
 ## Django secret key
@@ -613,7 +473,7 @@ os.environ["SECRET_KEY"] = "yourSecretKey"
 
 Note: Repository was created using Code Institute template: [https://github.com/Code-Institute-Org/gitpod-full-template](https://github.com/Code-Institute-Org/gitpod-full-template)
 
-1. Login to Github and navigate to repository: [https://github.com/Aylamccarthy/madisons-patisserie](https://github.com/Aylamccarthy/madisons-patisserie)
+1. Login to Github and navigate to repository: [https://github.com/Rupa830904/PP5-DanceAndFitness](https://github.com/Rupa830904/PP5-DanceAndFitness)
 
 2. Click on "Fork button" in upper-right corner and create a new form in your own account.
 
@@ -623,36 +483,28 @@ Note: Repository was created using Code Institute template: [https://github.com/
 
 ```text
 asgiref==3.7.2
-black==23.9.1
-boto3==1.28.50
-botocore==1.31.50
-click==8.1.7
-coverage==7.3.2
-dj-database-url==0.5.0
+cloudinary==1.36.0
+dj-database-url==2.1.0
+dj3-cloudinary-storage==0.0.6
 Django==3.2.21
 django-allauth==0.41.0
+django-cloudinary-storage==0.3.0
 django-countries==7.5.1
-django-mathfilters==1.0.0
-django-phonenumber-field==7.2.0
-django-phonenumbers==1.0.1
-django-resized==1.0.2
-django-storages==1.14
-django-url-tools==0.0.8
-django-url-tools-py3==0.2.1
+django-crispy-forms==1.14.0
+django-pandas==0.6.6
 gunicorn==21.2.0
-humanhash3==0.0.6
-jmespath==1.0.1
+install==1.3.5
+numpy==1.26.1
 oauthlib==3.2.2
-pathspec==0.11.2
-phonenumbers==8.13.23
-Pillow==10.0.1
-psycopg2==2.9.7
+pandas==2.1.2
+Pillow==10.1.0
+psycopg2==2.9.9
 python3-openid==3.2.0
+pytz==2023.3.post1
 requests-oauthlib==1.3.1
-s3transfer==0.6.2
 sqlparse==0.4.4
 stripe==7.0.0
-urllib3==1.26.16
+tzdata==2023.3
 ```
 
 5. Local env.py file should be configured as on example below:
@@ -663,8 +515,7 @@ import os
     # Env vars
     os.environ["DATABASE_URL"] = "postgres://yourLinkCopiedFromElephantSQLDashboard"
     os.environ["SECRET_KEY"] = "YourSecretKey"
-    os.environ["AWS_ACCESS_KEY_ID"] = "YourAwsAccessKeyId"
-    os.environ["AWS_SECRET_ACCESS_KEY"] = "YourAwsSecretAccessKey"
+    os.environ["CLOUDINARY_URL"]="cloudinary://yoursecretkey"
 ```
 
 6. In order to save django changes in database migration needs to be made.
@@ -699,7 +550,7 @@ import os
 
 1. Navigate to [https://heroku.com/](https://heroku.com/) login to your account and open dashboard. Click button "New" and select "Create new app" button.
 
-2. Enter app name, I used "madisons-patisserie", chose your region and click on "Create app" button.
+2. Enter app name, I used "danceandfitness", chose your region and click on "Create app" button.
 
 3. Click on newly created app and go to "Deploy" tab and then to "Deployment method" section. Authorize and connect your GitHub account, then find and select your repository.
 
@@ -709,176 +560,28 @@ NOTE: DISABLE_COLLECTSTATIC variable should be set to "1" for initial deployment
 
     | Key                    | Value                                                            |
     |------------------------|------------------------------------------------------------------|
-    | AWS_ACCESS_KEY_ID      | aws url beginning with aws://                      |
+    | CLOUDINARY_URL         | Cloudinary Url with access key                    |
     | DATABASE_URL           | postgress url beginning with postgress://                        |
-    | DISABLE_COLLECTSTATIC  | 1                                                                |
-    | PORT                   | 8000                                                             |
+    | DISABLE_COLLECTSTATIC  | 1                                                                |                                                          |
     | SECRET_KEY             | YourSecretKey, the same as in env.py                             |
 
 
-5. Return to your Gitpod workspace and navigate to the file `madisons_patisserie.settings.py`. Change allowed hosts including the name of the app that you created in previous steps. In my case, it was 'madisons-patisserie-8790c4325233.herokuapp.com/'. Save the file.
+5. Return to your Gitpod workspace and navigate to the file `danceandfitness.settings.py`. Change allowed hosts including the name of the app that you created in previous steps. Save the file.
 
 6. Procfile required to run project on Heroku was already created but if you change your app's name please make sure that this change is reflected in Procfile. It can be found in your project's main directory. In my case Procfile looks as below:
 
     ```python
-    web: gunicorn madisons_patisserie.wsgi:application
+    web: gunicorn danceandfitness.wsgi
     ```
 
 7. After adding enviromental variables and editing Procfile project is ready for deployment. In Heroku app's dashboard navigate to "Deploy" tab, scroll down to "Manual deploy" section. Select main branch from dropdown menu and click on "Deploy Branch".
 
 8. **Step required for final deployment:** Navigate again to app's settings, reveal config vars and delete DISABLE_COLLECTSTATIC entry if it was set before.
 
-9. After build is done, you should be able to see the button with the link leading to deployed app. In my case [https://madisons-patisserie-8790c4325233.herokuapp.com/](https://madisons-patisserie-8790c4325233.herokuapp.com/).
+9. After build is done, you should be able to see the button with the link leading to deployed app. In my case [Live Link](https://dancenfitness-708b83044c2d.herokuapp.com/).
 
 [Back to top ⇧](#overview)
 
-### AWS
-
-Amazon web services are used to store all our static and media files. 
-
-#### S3
-
-1. First you will need to sign up to AWS which you can do [here](https://aws.amazon.com/).
-2. Once you have created an account and logged in, under the All Services>Storage menu, click the link that says S3.
-3. On the S3 page you will need to create a new bucket. To do this click the orange button that says 'Create Bucket'.
-4. Name the bucket and select the closest region to you. To keep things simple I recommend naming the bucket after your project's name.
-5. Under 'Object Ownership' select 'ACLs enabled' and leave the Object Ownership as Bucket owner preferred. 
-6. Uncheck the 'Block all public access' checkbox and check the warning box to acknowledge that the bucket will be made public, then click create bucket. 
-7. Once created, click the bucket's name and navigate to the properties tab. Scroll to the bottom and under 'Static website hosting' click 'edit' and change the Static website hosting option to 'enabled'. Copy the default values for the index and error documents and click 'save changes'.
-8. Now navigate to the permissions tab, scroll down to the Cross-origin resource sharing (CORS) section, click edit and paste in the following code:  
-    ```
-    [
-        {
-            "AllowedHeaders": [
-            "Authorization"
-            ],
-            "AllowedMethods": [
-            "GET"
-            ],
-            "AllowedOrigins": [
-            "*"
-            ],
-            "ExposeHeaders": []
-        }
-    ]
-    ```
-9. Then scroll back up to the 'Bucket Policy' section. Click 'edit' and then 'Policy generator'. This should open the AWS policy generator page.
-10. From here under the 'select type of policy' dropdown menu, select 'S3 Bucket Policy'. Then inside 'Principle' allow all principals by typing a *.
-11. From the 'Actions dropdown menu select 'Get object'. Then head back to the previous tab and locate the Bucket ARN number. Copy that, return to the policy generator and paste it in the field labelled Amazon Resource Name (ARN).
-12. Once that's completed click 'Add statement', then 'Generate Policy'. Copy the policy that's been generated and paste it into the bucket policy editor.
-13. Before you click save, add a '/*' at the end of your resource key. This is to allow access to all resources in this bucket.
-14. Once those changes are saved, scroll down to the Access control list (ACL) section and click 'edit'.
-15. Next to 'Everyone (public access)', check the 'list' checkbox. This will pop up a warning box that you will also have to check. Once that's done click 'save'. 
-
-#### IAM
-
-1. Now that your bucket is ready we need to create a user to access it. In the search bar at the top of the window, search for IAM and select it.
-2. Once on the IAM page, click 'User Groups' from the side bar, then click 'Create group'.
-3. Name the group 'manage-*your-project-name*' and click 'Create group' at the bottom of the page. 
-4. Then from the sidebar click 'Policies', then 'Create policy'.
-5. Go to the JSON tab and click 'import managed policy'. Search for 'S3' and select 'AmazonS3FullAccess' and click import.
-6. Once this is imported you will need to edit it slightly. Go back to your bucket and copy your ARN number. Head back to this policy and update the Resource key to include your ARN, and another line with your ARN followed by a /*. It should end up looking something like this: 
-    ```
-    {
-        "Version": "2012-10-17",
-        "Statement": [
-            {
-                "Effect": "Allow",
-                "Action": [
-                    "s3:*",
-                    "s3-object-lambda:*"
-                ],
-                "Resource": [
-                    "YOUR-ARN-NO-HERE",
-                    "YOUR-ARN-NO-HERE/*"
-                ]
-            }
-        ]
-    }
-    ```
-7. Click 'Next: Tags', 'Next: Review', and on this page give the policy a name. This could be something as simple as the project name followed by the word policy, and then a short description eg: Access to S3 bucket for 'YOUR PROJECT' static files. Then click 'Create policy'. 
-8. This will take you back to the policy page where you should be able to see your newly created policy. Now we need to attach it to the group we created.  
-9. Click 'User groups', and click the group you created earlier. Go to the permissions tab and click 'Add permission' and from the dropdown click 'Attach policies'. 
-10. Find the policy you just created, select it and click 'Add permissions'.
-11. Finally you need to create a user to put in the group. Select users from the sidebar and click 'Add user'.  
-12. Give your user a user name, check 'Programmatic Access', then click 'Next: Permissions'. 
-13. Select your group that has the policy attached and click 'Next: Tags', 'Next: Review', then 'Create user'.
-14. On the next page, download the CSV file. This contains the user's access key and secret access key which you will need later. 
-
-[Back to top ⇧](#overview)
-
-#### Connecting AWS to django
-
-Now that you have created a S3 bucket with its user group attached, we need to connect it to django.
-
-1. First you will need to install two packages. Boto3 and Django storages. Do this by running these commands:  
-    ```
-    pip3 install boto3
-    pip3 install django-storages
-    ```
-    And remember to freeze the requirements with:  
-    ```
-    pip3 freeze > requirements.txt
-    ```
-2. You will then need to add 'storages' to your installed apps section inside your settings.py file. Do that now. 
-3. Next, we will need to add some additional settings to the same file to let django know what bucket it's communicating with. 
-4. Somewhere near the bottom of the file you should write an if statement to check if there is an environment variable called USE_AWS. This variable does not exist yet but we will add it later. Inside the if statement, write the following settings so it looks like this:  
-    ```
-    if 'USE_AWS' in os.environ:
-        AWS_STORAGE_BUCKET_NAME = 'insert-your-bucket-name-here'
-        AWS_S3_REGION_NAME = 'insert-your-region-here'
-        AWS_ACCESS_KEY_ID = os.environ.get('AWS_ACCESS_KEY_ID')
-        AWS_SECRET_ACCESS_KEY = os.environ.get('AWS_SECRET_ACCESS_KEY')
-    ```
-5. Next, hop back to heroku and in the settings tab, under config vars, you will need to add some keys with values that were downloaded earlier in the CSV file.
-6. Add the key, AWS_ACCESS_KEY_ID with the value that was generated in the CSV file earlier. Then add the key AWS_SECRET_ACCESS_KEY, and again add the value that was generated in the CSV file. Once they have both been added, add the key USE_AWS, and set the value to True.
-7. You can now also remove the DISABLE_COLLECTSTAIC variable, since django should now collect static files automatically and upload them to S3.
-8. Now head back to the settings.py file in your django project and head back to the if statement we wrote earlier and inside the statement add this line setting:  
-    ```
-    AWS_S3_CUSTOM_DOMAIN = f'{AWS_STORAGE_BUCKET_NAME}.s3.amazonaws.com'
-    ```
-    This is to tell django where our static files will be coming from in production.
-9. Next we need to create a file to tell django that we want to use S3 to store our static files whenever someone runs collectstatic and also that we want any uploaded product images to go there also.
-10. In the root directory of your project create a file called 'custom_storages.py'. Inside this file you will need to import your settings as well as the s3boto3 storage class. So at the top of the file insert the code:  
-    ```
-    from django.conf import settings
-    from storages.backends.s3boto3 import S3Boto3Storage
-    ```
-11. Then underneath the imports insert these two classes:  
-    ```
-    class StaticStorage(S3Boto3Storage):
-        location = settings.STATICFILES_LOCATION
-
-
-    class MediaStorage(S3Boto3Storage):
-        location = settings.MEDIAFILES_LOCATION
-    ```
-    The STATICFILES_LOCATION and MEDIAFILES_LOCATION have yet to be defined, so lets do that now.
-12. Back in the settings.py file, underneath the bucket config settings but still inside the if statement, add these lines:  
-    ```
-    STATICFILES_STORAGE = 'custom_storages.StaticStorage'
-    STATICFILES_LOCATION = 'static'
-    DEFAULT_FILE_STORAGE = 'custom_storages.MediaStorage'
-    MEDIAFILES_LOCATION = 'media'
-    ```
-13. Next, you will also need to override and explicitly set the URLs for static and media files using your custom domain and new locations. To do this add these two lines inside the same if statement:  
-    ```
-    STATIC_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/{STATICFILES_LOCATION}/'
-    MEDIA_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/{MEDIAFILES_LOCATION}/'
-    ```
-14. If you now save, add, commit and push your changes, you should see that your S3 bucket now has a static folder with all your static files inside. Next, we need to handle the Media files but first, inside the if statement add the following code. This helps to speed things up by letting the browser know that its ok to cache static files for a long time:    
-    ```
-    AWS_S3_OBJECT_PARAMETERS = {
-        'Expires': 'Thu, 31 Dec 2099 20:00:00 GMT',
-        'CacheControl': 'max-age=94608000',
-    }
-    ```
-15. Back in S3, go to your bucket and click 'Create folder'. Name the folder 'media' and click 'Save'. 
-16. Inside the new media folder you just created, click 'Upload', 'Add files', and then select all the images that you are using on your site.
-17. Then under 'Permissions' select the option 'Grant public-read access' and click upload. You may need to also check an acknowledgment warning checkbox too. 
-18. Once that is finished you're all set. All your static files and media files should be automatically linked from django to your S3 bucket.
-
-[Back to top ⇧](#overview)
 
 ### Stripe
 
@@ -915,12 +618,12 @@ Stripe is needed to handle the checkout process when a payment is made. You will
     <br>
 ### Fork the repository
 For creating a copy of the repository on your account and change it without affecting the original project, use<b>Fork</b> directly from GitHub:
-- On [My Repository Page](https://github.com/Aylamccarthy/madisons-patisserie), press <i>Fork</i> in the top right of the page
+- On [My Repository Page](https://github.com/Rupa830904/PP5-DanceAndFitness), press <i>Fork</i> in the top right of the page
 - A forked version of my project will appear in your repository<br></br>
 
 ### Clone the repository
 For creating a clone of the repository on your local machine, use<b>Clone</b>:
-- On [My Repository Page](https://github.com/Aylamccarthy/madisons-patisserie), click the <i>Code</i> green button, right above the code window
+- On [My Repository Page](https://github.com/Rupa830904/PP5-DanceAndFitness), click the <i>Code</i> green button, right above the code window
 - Chose from <i>HTTPS, SSH and GitClub CLI</i> format and copy (preferably <i>HTTPS</i>)
 - In your <i>IDE</i> open <i>Git Bash</i>
 - Enter the command <code>git clone</code> followed by the copied URL
@@ -931,26 +634,15 @@ For creating a clone of the repository on your local machine, use<b>Clone</b>:
 ### Content
 * The content of the website is fictive but was loosely based on the project owner's personal experience. 
 
-### Media
- All products images used on the site were taken from:
-* [Google](https://www.google.com/)
-* [pexels](https://www.pexels.com/)
-* [pixabay](https://www.pixabay.com/)
-* [pixelied](https://pixelied.com/convert/png-converter/png-to-webp)- for converting images to webp format.
-* [picresize](https://picresize.com/)- for resizing images.
-
-
 ### Code
 * The whole project was built utilising Code Institute's LMS. More specifically the 'Boutique-ado, 'Hello Django' and 'I think Therefore I Blog' walkthrough projects.
-* The code for creating a custom user model was taken and adapted from [here](https://www.codingforentrepreneurs.com/blog/how-to-create-a-custom-django-user-model/)
-* The validation for the checkout form was inspired from [here](https://www.javascripttutorial.net/javascript-dom/javascript-form-validation/)
 * Daisy McGirr Django Youtube Tutorials (https://www.youtube.com/watch?v=dCvkAVN5uas&list=PLXuTq6OsqZjYSa-lrjd5wMGl23zpnhvln)
 
 ## Acknowledgements
 - Code Institute for all the materials and support offered.<br>
 - My mentor Gareth McGirr for all the advice and support and always went above and beyond to help me as much as possible with the problems encountered during the development of the project.<br>
-- Slack community for unparalled motivation, help and support.<br>
-- To Slack community-study-group huddle with Daisy and Gareth McGirr, thank you so much for all your invaluable help and guidance. Much appreciated, more than you'll ever know .<br>
+- Code Institute tutor's help support and guidance throughout the project.<br>
+<br>
 
 <hr>
 
