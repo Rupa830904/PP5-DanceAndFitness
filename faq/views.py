@@ -22,5 +22,8 @@ def contact(request):
 
     return render(request, template, context)
 
+def about_us(request):
+    """ A view that renders the cart contents page """
 
+    return render(request, 'about_us.html')
 # Create your views here.

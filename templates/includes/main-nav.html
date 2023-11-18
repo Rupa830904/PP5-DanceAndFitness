@@ -43,9 +43,13 @@
             </div>
         </li>
         <li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold nav-link text-black" href="{% url 'contact' %}" id="specials-link">
-                Contact Us
+            <a class="logo-font font-weight-bold nav-link text-black" href="#" id="homeware-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                About D&F
             </a>
+            <div class="dropdown-menu border-0" aria-labelledby="homeware-link">
+                <a href="{% url 'about' %}" class="dropdown-item">Location & Opening Hours</a>
+                <a href="{% url 'contact' %}" class="dropdown-item">Contact Us</a>
+            </div>
         </li>
     </ul>
 </div>
