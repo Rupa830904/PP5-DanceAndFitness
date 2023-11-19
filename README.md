@@ -195,11 +195,11 @@ I prioritized features by labeling them such as "must-have", "could-have", "shou
 
 As a student solo developer who was learning a lot during development, I faced challenges in estimating the time required for each task and only had a basic concept of what I would be able to create at a given timeframe. Therefore, I kept things simple and focused on achievable goals. Aiming for Minimum Viable Product, or MVP. All the features and functionalities that I wanted to have but I didn't manage to finish because of time constraints were moved to "Future Enhancement". With the goal of implementing them on the projects future release.
 
-To keep track of progress, I used Github Projects(). I used a kanban board () divided into following sections: "to do", "in progress" "done" that allowed me to visualize all tasks and prioritize next steps. However, I could not find the "epics" feature in GitHub Projects, only milestones it provides only [milestones and issues](). Epics are supposed to be larger in scope than milestones, representing a significant amount of work. Milestones, on the other hand, are meant to mark significant points in time in terms of project completion. In this document, I added as epics, but on the project board, I used only [milestones]() to stay in order with GitHub's features.
+To keep track of progress, I used [Github Projects](https://github.com/users/Rupa830904/projects/7). I used a kanban board () divided into following sections: "to do", "in progress" "done" that allowed me to visualize all tasks and prioritize next steps. However, I could not find the "epics" feature in GitHub Projects, only milestones it provides only [milestones and issues](https://github.com/Rupa830904/PP5-DanceAndFitness/issues). Epics are supposed to be larger in scope than milestones, representing a significant amount of work. Milestones, on the other hand, are meant to mark significant points in time in terms of project completion. In this document, I added as epics, but on the project board, I used only [milestones](https://github.com/Rupa830904/PP5-DanceAndFitness/milestones) to stay in order with GitHub's features.
 
 By using Agile methodology, I was able to stay organized, work efficiently and focused on delivering the most important features, while also allowing flexibility for future development. This experience gave me invaluable insight and lessons that I can apply to future projects.
 
-<img width="80%" src="">
+<img width="80%" src="media/kanban-board.png">
 <br> <br>
 <img width="80%" src="">
 
