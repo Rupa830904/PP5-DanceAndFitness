@@ -111,11 +111,9 @@ The structure of the website is divided into multiple pages and the content is d
 - **Logout** feature is a drop down under account that helps user exit their current account;<br>
 - The **Home** page is visible for both types of users and provides a button the explore all packages<br>
 - The **All products** page displays the card with all the products available to book;<br>
-- The **Cakes** navigation link gives the user the possibility to access the list of products grouped by category, <b>Fresh Cream Cakes</b>, <b>Buttercream Cakes</b>, <b>Drip Cakes</b> and <b>Celebration Cakes</b>;<br>
 - The **Product details** page displays full specifications for a package and gives access to the <b>Review</b> feature. It also includes a feature for  adding the product to cart;<br>
 - The **Profile** page is only available for authenticated users gives access to personal informations and orders' history;<br>
 - The **Profile order  history details** page gives access to the user to full specifications only for orders placed by him/her.<br>
-- The **Wishlist** page contains a list with all the products added by the user and cannot be accessed by guest or admin users;<br>
 - The **Cart** page displays all the items added in the shopping bag with associated features also provides possibilities to add/remove/update product from cart;<br>
 - The **Checkout page** includes an order summary and a form for personal, delivery and payment details;<br>
 - The **Checkout success** page displays full specification for the successful order;<br>
@@ -139,9 +137,6 @@ The project uses the PostgreSQL relational database for storing the data.<br>
 
 
 ### Surface<hr>
-#### Color Scheme
-All the colours were selected generated from the hero image using Coolors
-<img src="media/colorpalette.png" width="60%"><br>
 
 #### Fonts
 * The fonts I used for this site were imported from [Google Fonts](https://fonts.google.com/):<br>
@@ -154,7 +149,7 @@ All the colours were selected generated from the hero image using Coolors
 * The business model chosen for this project is <b>Business to Customer</b>, as the main purpose of the website is to deliver final products to customers. This model was implemented using an interactive, attractive and intuitive interface that gives the clients an upgraded experience for shopping.<br><br>
 <img src="media/b2c_diagram.png" width="60%">
 
-* The online bakeshop offers a diverse selections of dance and fitness packages categorised as *All Products*, *Dance* (Dances are further sub-categorised to Indian, western, and Fitness), *Training* (Trainings are further sub-categorised to GYM, Sports, and group trainings), *Recharge* (Reacharge are further sub-categorised to Food and Relax package).
+* The DanceAndFitness center offers a diverse selections of dance and fitness packages categorised as *All Products*, *Dance* (Dances are further sub-categorised to Indian, western, and Fitness), *Training* (Trainings are further sub-categorised to GYM, Sports, and group trainings), *Recharge* (Reacharge are further sub-categorised to Food and Relax package).
 
 
 ## Marketing
@@ -245,7 +240,8 @@ By using Agile methodology, I was able to stay organized, work efficiently and f
 * **Sprint 5**<br>
     -Create 500.html page<br>
     -Create 404.html<br>
-    -Write testing and readme.md
+    -Add about us page<br>
+    -Write testing and readme.md<br>
     <br><br>
 </details><br><br>
 
@@ -255,18 +251,20 @@ By using Agile methodology, I was able to stay organized, work efficiently and f
 #### Products
 Every user can access the page with the product catalogue. The items are listed attractively and their design is adapted to all devices.
 
-* On every page with a catalogue of products, there is a section for filtering and sorting.<br>
+* On NavBar with a drop down options, there is a section for filtering and sorting.<br>
     The filters can be selected from a dropdown with all the values existing in the list of items displayed. When a user selects a filter, its value is added to a list of *active filters* and the list updates accordingly. Any active filter can be removed and the list will return to its initial state.<br><br>
-    <img src="media/product_filter.png"><br><br>
+    <img src="media/package_search.jpg"><br><br>
 
-    The sorting feature is available for the user by selecting a value from the available options that will update the products' list accordingly.<br><br>
-    <img src="media/product_sorting.png" width="40%"><br><br>
+    The sorting feature is available for the user by selecting a value from the available options from NavBar that will update the package' list accordingly.<br><br>
+    <img src="media/sorted_price.png" width="40%"><br><br>
+* User has a seearch bar in product home page, where user can search with a product name or any keyword, if the key word matches the product name or description , then the products are dispalyed..
+ <img src="media/spa_search.jpg"><br><br>
 
-* All the products are listed as hoverable elements which include relevant information for the users. The items with low stock have a banner to announce the user about their availability.<br><br>
+* All the products are listed as card elements which include relevant information for the users.<br><br>
 <img src="media/all_products.png"><br><br>
 
 * Every products has a *details page* that includes full specifications.<br><br>
-<img src="media/product_details.png" width="70%"><br><br>
+<img src="media/package_details.png" width="70%"><br><br>
 
 #### Product Reviews
 * On the *Product Details* page there is a list with all the reviews posted on the website and it is visible to all types of users. All the reviews have the same design and type of content. Important details are displayed such as *Name*, *Date and time*, *Stars rating* and the *Message* posted.<br><br>
