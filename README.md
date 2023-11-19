@@ -285,10 +285,10 @@ Every user can access the page with the product catalogue. The items are listed 
 #### Cart
 * A feature for adding a product to the shopping cart been created , 
 * Add to cart option is available for all users, and it updates the cart with total amount.
-<img src="media/add_to_cart.png"><br><br>
+<img src="media/Add_to_cart.png"><br><br>
 
 * In the *Cart* page there's a list of the added items with details about quantity and price. Any item can be removed by clicking on the 'remove' link and also the quantity can be updated, clicking on the '.<br><br>
-<img src="media/cart_page.png"><br><br>
+<img src="media/Cart_page.png"><br><br>
 * 
 
 #### Checkout
