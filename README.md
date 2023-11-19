@@ -319,7 +319,7 @@ A form for personal, and payment details is displayed for the user to fill in wi
 
 #### Contact
 * The *Contact Us* page was created with the aim of providing the users to give opportunity to contact D&F for any questions.<br><br>
-<img src="media/contact_form.webp" width="80%"><br><br>
+<img src="media/contact_form.png" width="80%"><br><br>
 
 
 #### User Profile
