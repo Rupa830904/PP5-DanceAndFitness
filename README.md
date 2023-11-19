@@ -315,53 +315,34 @@ A form for personal, and payment details is displayed for the user to fill in wi
 
 #### About Us
 * The about us page shows the location and opening hours of the fitness center.<br><br>
-<img src="media/aboutus_image.png" width="40%"><br><br>
-
-* On the left hand side of the image are some fictional information of how Madison's Patisserie came to be. This was used to create an opportunity to use keywords related to the site's business to help boost search ratings.<br><br>
-<img src="media/aboutus_info.png" width="40%"><br><br>
+<img src="media/about_us.png" width="40%"><br><br>
 
 #### Contact
-* The contact page has the image of the fictional cafe of the bakeshop. The contact info has all the relevant information such as address, telephone number and email address.
-* It also contains the cafe's  opening hours as well as google map that has the marker set to the fictional address of the bakeshop's cafe.
-* The *Contact* page was created with the aim of providing the users all the relevant information about the bakeshop's contact details, opening hours and location without needing to contact the bakeshop.<br><br>
-<img src="media/contact.webp" width="80%"><br><br>
+* The *Contact Us* page was created with the aim of providing the users to give opportunity to contact D&F for any questions.<br><br>
+<img src="media/contact_form.webp" width="80%"><br><br>
 
 
 #### User Profile
 The *User Profile* page gives the user access to individual and private features.<br>
-* The page includes a form for adding or updating the delivery details. These details are saved in the database and whenever the user is logged in and wants to make an order, the values will be automatically set in the checkout form. <br><br>
-<img src="media/delivery_details.png" width="40%"><br><br>
+* The page includes a form for adding or updating the personal details. These details are saved in the database and whenever the user is logged in and wants to make an order. <br><br>
+<img src="media/user_profile.png" width="40%"><br><br>
 
 * Another important feature is the **Orders history** which is represented by a table with all the orders made by the user. <br><br>
-<img src="media/profile_orderhistory.png" width="40%"><br><br>
+<img src="media/order_history.png" width="40%"><br><br>
 Each order item has a details page that can be accessed by clicking on the order number value.<br><br>
-<img src="media/order_details.png" width="50%"><br><br>
+<img src="media/order_history_details.png" width="50%"><br><br>
 
 #### Admin
 The admin account was created as a superuser account from the terminal and also has access to the admin panel.<br>
-* There is a page created especifically created for staff members to keep better track of all the orders placed on the website.<br>
-<img src="media/admin_orderdetails.png" width="60%"><br><br>
-The orders are displayed in a custom-designed table, grouped by day and ordered by time. The page renders by default the orders for the current day. 
+* There is a page created for admin to add new packages and offers in center.<br>
+<img src="media/add_pcakge.png" width="60%"><br><br>
 
-* A form is provided for filtering the orders by date for a better user experience.<br><br>
-<img src="media/manage_orders.png" width="60%"><br><br>
+* A form is provided for updating package description and price for the offers.<br><br>
+<img src="media/update_package.png" width="60%"><br><br>
 
-* Every order has a delete button that triggers a confirmation modal and gives access to a full details page by clicking on the order_number value <br><br>
-<img src="media/admin_manageorders.png" width="60%"><br><br>
-
-* An admin user have access to features for *adding a new product*, *edit a product's details* and *delete product*. 
-<img src="media/edit_delete_product.png" width="60%"><br><br>
-
-* The last two implementations are available on the *Product Details* page and only for staff accounts.<br><br>
-<img src="media/add_product.png" width="30%"><br><br>
-<img src="media/update_product.png" width="30%"><br><br>
-
-#### FAQs Page
-The *FAQs* page was created with the aim of providing the users all the relevant information  and answers to all their frequently asked questions without needing to contact the bakeshop.<br><br>
-<img src="media/faqs.png" width="80%"><br><br>
 
 #### Toasts
-* Toasts appear in the top right-hand corner of the display informing the user of any actions they have performed.
+* Toasts appear in the top right-hand corner of the display informing the user of any actions they have performed in the cart.
 <img src="media/toasts.png" width="40%"><br><br>
 
 ### Future Feature Considerations<hr>
@@ -406,11 +387,7 @@ The project design has been adapted to all types of devices using Bootstrap pred
 [CLOUDINARY](https://cloudinary.com/) - for storing media and static data<br>
 [ElephantSql](https://www.elephantsql.com/) - for hosting the PostgresSql database migrated from Heroku
 [pixelied](https://pixelied.com/convert/jpg-converter/jpg-to-webp) - for converting the images to webp format.
-Gmail - for sending emails using the SMTP server
-
-### Python packages
-
-*
+[Gmail] - for sending emails using the SMTP server
 
 
 [Back to top ⇧](#overview)
