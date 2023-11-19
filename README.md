@@ -1,5 +1,5 @@
 # DanceAndFitness - Fitness Center
-<img src="" ><br>
+<img src="media/mock-up-dnf.png" ><br>
 <hr>
 
 <h3 align="center">Full-Stack Project- E-Commerce(HTML5, CSS3, Bootstrap, Django, Python, JavaScript, jQuery, PostgreSQL, Cloudinary, Heroku)</h3>
@@ -267,7 +267,10 @@ Every user can access the page with the product catalogue. The items are listed 
 <img src="media/package_details.png" width="70%"><br><br>
 
 #### Product Reviews
-* On the *Product Details* page there is a list with all the reviews posted on the website and it is visible to all types of users. All the reviews have the same design and type of content. Important details are displayed such as *Name*, *Date and time*, *Stars rating* and the *Message* posted.<br><br>
+* On the *Package Details* page there is a list with all the reviews posted on the website and it is visible to all types of users. All the reviews have the same design and type of content. Important details are displayed such as *Name*, *Date and time*, *Stars rating* and the *Message* posted.<br><br>
+<img src="media/review.png" width="60%"><br><br>
+
+* On the *Package Details* page there is a list with all the reviews posted on the website and it is visible to all types of users. All the reviews have the same design and type of content. Important details are displayed such as *Name*, *Date and time*, *Stars rating* and the *Message* posted.<br><br>
 <img src="media/review.png" width="60%"><br><br>
 
 * When a user is authenticated and he never posted a review, a form is provided for leaving a message and a star rating.<br><br>
@@ -278,25 +281,10 @@ The form for editing the review already contains the corresponding message value
 <img src="media/submit_review.png" width="40%"><br><br>
 <img src="media/update_review.png" width="40%"><br><br>
 
-#### Wishlist
-* On the *Product Details* page there is an interactive feature that is only available for logged-in users that are not staff members. A user has the possibility to add a product to the wishlist through a form that uses a heart icon as a button. The heart shape defines the state of the product in the wishlist database. This feature is also accessible on the *Bag* page.<br><br>
-<img src="media/add_wishlist.png" width="30%"><br><br>
-<img src="media/remove_wishlist.png" width="30%"><br><br>
-
-* In the *Wishlist* page there are listed all the favourite items of the user with a design similar to the one created for the *Products* pages. A filtering and sorting section is also available and every element is linked to a *Product Details* page.<br>
-An additional feature would be that every item includes a representation of the number of times it has been added to the wishlist by all the users.<br><br>
-<img src="media/wishlist.png" width="90%"><br><br>
-
-#### Bag
+#### Cart
 * A feature for adding a product to the shopping bag has been created and included in the *Products*, *Product Details* and *Wishlist* pages. This is a form for updating the products existing in the shopping bag and also their quantity.
 * In the *Bag* page there's a list of the added items with details about quantity and price. Any item can be removed by clicking on the bin icon and also the quantity can be updated.<br><br>
 <img src="media/bag_list.png"><br><br>
-
-* A section for applying a voucher code has been implemented. Whenever a user registers on the website, an email with a 20% discount voucher code is sent automatically to the user via email. The code can be used in the shopping bag for a 20% discount. The voucher can be applied and also removed before proceeding to checkout. The code can be used only be used once by the account holder.<br>
-When the order total cost doesn't reach the value specified (€50) on the website for *free delivery*, a message will be displayed to inform the user about the remaining value to be added to be able to avail of free delivery service (calculated as 10% from the order total).<br><br>
-<img src="media/voucher_email.png" width="60%"><br><br>
-<img src="media/confirm_voucher_toast.png" width="40%"><br><br>
-<img src="media/voucher1.png" width="40%"><br><br>
 
 #### Checkout
 * The *Checkout* page represents the final step in completing the order.<br>
@@ -313,10 +301,6 @@ A form for personal, delivery and payment details is displayed for the user to f
 * At the end of the section is a button to complete the order or to return back to the bag. There is also a warning message informing the user of how much their card is about to be charged.<br><br>
 <img src="media/stripe_payment.png" width="60%"><br><br>
 
-#### Loading Spinner
-* Upon clicking the complete order button, as long as the form is valid, a loading spinner will render until the information is processed completely.<br><br>
-<img src="media/loading_spinner.png" width="40%"><br><br>
-
 [Back to top ⇧](#overview)
 #### Webhooks
 * Using the Stripe website, webhooks have been set up to confirm an order goes through after payment.
@@ -324,7 +308,7 @@ A form for personal, delivery and payment details is displayed for the user to f
 <img src="media/webhook.png" width="40%"><br><br>
 
 #### About Us
-* The about us page features an image of the fictional founder of Madison's Patisserie and her daughter.<br><br>
+* The about us page shows the location and opening hours of the fitness center.<br><br>
 <img src="media/aboutus_image.png" width="40%"><br><br>
 
 * On the left hand side of the image are some fictional information of how Madison's Patisserie came to be. This was used to create an opportunity to use keywords related to the site's business to help boost search ratings.<br><br>
