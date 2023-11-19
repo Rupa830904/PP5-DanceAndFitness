@@ -63,12 +63,18 @@ This site was created respecting the Five Planes Of Website Design:<br>
 |                                       || As a user I can proceed to secure checkout so that I can buy the health packages|
 |                                       || As a user I can pay with my credit card so that I can buy the packages|
 |                                       || As a developer I need to setup stripe account so that I can manage user payment|
+|**Rating&Reviews**                     |  ||
+|                                       || As a user I can view total reviews and ratings of all packages so that I can choose the appropriate package.|
+|                                       || As a user I can read detailed reviews so that I know more about the product|
+|                                       || As a user I can review and rate a product so that I can give feedback|
+|                                       || As a user I can view the average rating so that I know other user's feedback|
 |**USER MANAGEMENT**                       |  ||
 |                                       || As a user I can submit the contact form so that I can get in touch with the service provide also subscribe to newsletters|
 |                                       || As a user I need to I should be able to save personal details so that my profile is saved for every purchases|
 |                                       || As a user I can view my order history so that I know my previous purchases|
 |                                       || As a user I can view my order history so that I know my previous orders|
 |                                       || As a user I can see my order history under my profile so that I can see me previous order details|
+|                                      || As a user I can view the location and opening hours so that I can find dance and fitness|
 |**Testing & Documentation**                |  ||
 |                                       || As a developer I need to write readme.md so that I can clearly explain my project|
 |                                       || As a developer I must write a testing.md so that all my tests are well described|
@@ -201,7 +207,7 @@ By using Agile methodology, I was able to stay organized, work efficiently and f
 
 <img width="80%" src="media/kanban-board.png">
 <br> <br>
-<img width="80%" src="">
+<img width="80%" src="media/user-stories.png">
 
 <details>
 <summary><strong>Sprints Details</strong></summary>
@@ -267,31 +273,31 @@ Every user can access the page with the product catalogue. The items are listed 
 <img src="media/package_details.png" width="70%"><br><br>
 
 #### Product Reviews
-* On the *Package Details* page there is a list with all the reviews posted on the website and it is visible to all types of users. All the reviews have the same design and type of content. Important details are displayed such as *Name*, *Date and time*, *Stars rating* and the *Message* posted.<br><br>
-<img src="media/review.png" width="60%"><br><br>
+* On the *Package Details* page there is a button for the users to read all reviews posted on the website and it is visible to all types of users.<br><br>
+<img src="media/Reviews.png" width="60%"><br><br>
 
-* On the *Package Details* page there is a list with all the reviews posted on the website and it is visible to all types of users. All the reviews have the same design and type of content. Important details are displayed such as *Name*, *Date and time*, *Stars rating* and the *Message* posted.<br><br>
-<img src="media/review.png" width="60%"><br><br>
+* On the *Package Details* page , it shows the total no. of rating and average rating for each packages based on the reviews recieved.<br><br>
+<img src="media/Rating.png" width="60%"><br><br>
 
-* When a user is authenticated and he never posted a review, a form is provided for leaving a message and a star rating.<br><br>
-<img src="media/add_review.png" width="40%"><br><br>
-
-* For authenticated users that already posted a review, the page displays the values of their review and the possibility to update it.<br><br>
-The form for editing the review already contains the corresponding message value and the star ratings in the initial state.<br><br>
-<img src="media/submit_review.png" width="40%"><br><br>
-<img src="media/update_review.png" width="40%"><br><br>
+* When a user is authenticated , User can click on a 'Write review' link which wil direct user to a review form.<br><br>
+<img src="media/Review_from.png" width="40%"><br><br>
 
 #### Cart
-* A feature for adding a product to the shopping bag has been created and included in the *Products*, *Product Details* and *Wishlist* pages. This is a form for updating the products existing in the shopping bag and also their quantity.
-* In the *Bag* page there's a list of the added items with details about quantity and price. Any item can be removed by clicking on the bin icon and also the quantity can be updated.<br><br>
-<img src="media/bag_list.png"><br><br>
+* A feature for adding a product to the shopping cart been created , 
+* Add to cart option is available for all users, and it updates the cart with total amount.
+<img src="media/add_to_cart.png"><br><br>
+
+* In the *Cart* page there's a list of the added items with details about quantity and price. Any item can be removed by clicking on the 'remove' link and also the quantity can be updated, clicking on the '.<br><br>
+<img src="media/cart_page.png"><br><br>
+* 
 
 #### Checkout
 * The *Checkout* page represents the final step in completing the order.<br>
-A form for personal, delivery and payment details is displayed for the user to fill in with valid data. As the delivery is available only for Cork - Ireland, the fields *Country, County and City* are filled by default with values and can't be edited by the user from the interface. Additionally, a validation has been implemented to not allow other values to be submitted. The form has validation for the phone number field as well to match an Ireland format. The payment input has its own Stripe-implemented validation.<br><br>
-<img src="media/checkout_page.png" width="80%"><br><br>
+A form for personal, and payment details is displayed for the user to fill in with valid data. Users will geta mail after successful checkout with order number. Which will be their fitness pass. Additionally, a validation has been implemented to not allow other values to be submitted. The form has validation for the phone number field as well to match an Ireland format. The payment input has its own Stripe-implemented validation.<br><br>
+<img src="media/sample_checkout.png" width="80%"><br><br>
 * An order summary is displayed with details about the products and cost.
 * After the order is completed, the user is sent to a *Checkout Success * page with full specifications and details.
+<img src="media/order_success.png" width="80%"><br><br>
 
 #### Payment
 * Underneath the delivery details is the card payment box which is run by Stripe.
@@ -299,7 +305,7 @@ A form for personal, delivery and payment details is displayed for the user to f
   invalid card number error.
 * The site can be tested by using the dummy card number 4242 4242 4242 4242 with the expiry date 04/24 and the CVC code 242.
 * At the end of the section is a button to complete the order or to return back to the bag. There is also a warning message informing the user of how much their card is about to be charged.<br><br>
-<img src="media/stripe_payment.png" width="60%"><br><br>
+<img src="media/payment_option.png" width="60%"><br><br>
 
 [Back to top ⇧](#overview)
 #### Webhooks
