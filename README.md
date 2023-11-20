@@ -246,6 +246,7 @@ By using Agile methodology, I was able to stay organized, work efficiently and f
 * **Sprint 5**<br>
     -Create 500.html page<br>
     -Create 404.html<br>
+    -Add confirmation email for new user registration<br>
     -Add about us page<br>
     -Write testing and readme.md<br>
     <br><br>
