@@ -23,9 +23,8 @@ class ContactForm(forms.ModelForm):
         }
 
         def __init__(self, *args, **kwargs):
-          super(ContactForm, self).__init__(*args, **kwargs)
-          if self.instance and self.fields.subscribe is False:
-              self.fields['email'].disabled = True # still displays the field in the template
-            # del self.fields['job'] # removes field from form and template
-          if self.instance and self.fields.subscribe is True:
-              self.fields['email'].disabled = False
+            super(ContactForm, self).__init__(*args, **kwargs)
+            if self.instance and self.fields.subscribe is False:
+                self.fields['email'].disabled = True
+            if self.instance and self.fields.subscribe is True:
+                self.fields['email'].disabled = False

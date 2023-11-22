@@ -8,7 +8,7 @@ class Contact(models.Model):
     name = models.CharField(max_length=80)
     email = models.EmailField()
     question = models.TextField()
-    answer = models.TextField(default="Thanks for contacting us.We will get back to you soon")
+    answer = models.TextField(default="Thanks for contacting us")
     subscribe = models.BooleanField()
 
     class Meta:
