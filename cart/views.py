@@ -8,14 +8,15 @@ from django.shortcuts import render
 
 # Create your views here.
 
+
 def view_cart(request):
     """ A view that renders the cart contents page """
 
     return render(request, 'cart.html')
 
+
 def add_to_cart(request, item_id):
     """ Add a quantity of the specified product to the shopping bag """
-    
     product = Package.objects.get(pk=item_id)
     quantity = int(request.POST.get('quantity'))
     redirect_url = request.POST.get('redirect_url', 'view_cart')
@@ -23,7 +24,8 @@ def add_to_cart(request, item_id):
 
     if item_id in list(cart.keys()):
         cart[item_id] += quantity
-        messages.success(request, f'Added {quantity} of {product.name} to your cart')
+        messages.success
+        (request, f'Added {quantity} of {product.name} to your cart')
     else:
         cart[item_id] = quantity
         messages.success(request, f'Added {product.name} to your cart')
@@ -31,10 +33,9 @@ def add_to_cart(request, item_id):
     request.session['cart'] = cart
     return redirect(redirect_url)
 
+
 def remove_from_cart(request, item_id):
     """ Remove the specified product from the shopping cart """
-    
-
     product = get_object_or_404(Package, pk=item_id)
     cart = request.session.get('cart', {})
 
@@ -54,18 +55,14 @@ def adjust_cart(request, item_id):
     quantity = cart.get(item_id)
     print(quantity)
     cart[item_id] = quantity
-    
     return render(request, 'update_quantity.html')
 
-   
+
 def update_cart(request, item_id):
     """ Add a quantity of the specified product to the shopping bag """
     cart = request.session.get('cart', {})
-
-
     if request.method == 'POST':
         quantity = int(request.POST.get('quantity'))
-        
         if item_id in list(cart.keys()):
             cart[item_id] = quantity
 
