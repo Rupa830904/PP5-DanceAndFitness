@@ -299,44 +299,7 @@ The python code was tested using [Code Institute python linter](https://pep8ci.h
 At the time of deployment the python code validation have the following outcomes:<br><br>
 
 <details>
-<summary>Main App</summary>
-<img src="media/context_processor.png" width="70%"><br><br>
-
-</details>
-<details>
-<summary>Bag App</summary>
-<img src="media/bag_context.png" width="70%"><br><br>
-
-</details>
-<details>
-<summary>Checkout App</summary>
-<img src="media/checkout_app1.png" width="70%"><br><br>
-
-</details>
-<details>
-<summary>Contact App</summary>
-<img src="media/contact_app1.png" width="70%"><br><br>
-
-</details>
-<details>
-<summary>Newsletter App</summary>
-<img src="media/newsletter_app1.png" width="70%"><br><br>
-
-</details>
-<details>
-<summary>Product Reviews App</summary>
-<img src="media/review_app1.png" width="70%"><br><br>
-
-</details>
-<details>
-<summary>Products App</summary>
-<img src="media/products_app1.png" width="70%"><br><br>
-
-</details>
-<details>
-<summary>Profiles App</summary>
-<img src="media/profiles_app1.png" width="70%"><br><br>
-
+<summary>Pycodestyle</summary>
 
 </details>
 

@@ -1,13 +1,11 @@
 from django.contrib import admin
-
-# Register your models here.
-
 from .models import Package, Category, Review
 
 # Register your models here.
 
+
 class PackageAdmin(admin.ModelAdmin):
-     list_display = (
+    list_display = (
         'name',
         'category',
         'description',
@@ -15,7 +13,8 @@ class PackageAdmin(admin.ModelAdmin):
         'package_image',
     )
 
-     ordering = ('category',)
+    ordering = ('category',)
+
 
 class CategoryAdmin(admin.ModelAdmin):
     list_display = (
@@ -32,6 +31,7 @@ class ReviewAdmin(admin.ModelAdmin):
     )
 
     ordering = ('createdAt',)
+
 
 admin.site.register(Package, PackageAdmin)
 admin.site.register(Category, CategoryAdmin)

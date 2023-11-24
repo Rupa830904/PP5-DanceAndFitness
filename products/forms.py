@@ -4,6 +4,7 @@ from django.core.exceptions import ValidationError, ObjectDoesNotExist
 from .models import Review, Package
 from django.contrib.auth.models import User
 
+
 class ReviewForm(forms.ModelForm):
     """ Form to ask a question"""
     class Meta:
@@ -17,11 +18,12 @@ class ReviewForm(forms.ModelForm):
             'comment': 'comment',
         }
 
+
 class ProductForm(forms.ModelForm):
     """ Form to ask a question"""
     class Meta:
         model = Package
-        fields = ['category', 'name', 'price','description','package_image']
+        fields = ['category', 'name', 'price', 'description', 'package_image']
         name = forms.CharField()
         description = forms.CharField()
         price = forms.DecimalField()
@@ -31,11 +33,12 @@ class ProductForm(forms.ModelForm):
             'price': 'price',
         }
 
+
 class Editproduct(forms.ModelForm):
     """ Form to ask a question"""
     class Meta:
         model = Package
-        fields = ['price','description']
+        fields = ['price', 'description']
         description = forms.CharField()
         price = forms.DecimalField()
 

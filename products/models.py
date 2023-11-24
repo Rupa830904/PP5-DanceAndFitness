@@ -17,7 +17,10 @@ class Category(models.Model):
 
 
 class Package(models.Model):
-    category = models.ForeignKey('Category', null=True, blank=True, on_delete=models.SET_NULL)
+    category = models.ForeignKey('Category',
+                                 null=True,
+                                 blank=True,
+                                 on_delete=models.SET_NULL)
     name = models.CharField(max_length=254)
     description = models.TextField()
     price = models.DecimalField(max_digits=8, decimal_places=2)
@@ -38,7 +41,8 @@ class Package(models.Model):
 
 
 class Review(models.Model):
-    product = models.ForeignKey('Package', on_delete=models.SET_NULL, null=True)
+    product = models.ForeignKey('Package',
+                                on_delete=models.SET_NULL, null=True)
     user = models.ForeignKey(User, on_delete=models.SET_NULL, null=True)
     rating = models.IntegerField(null=True, blank=True, default=0)
     comment = models.TextField(null=True, blank=True)
