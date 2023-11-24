@@ -300,7 +300,7 @@ At the time of deployment the python code validation have the following outcomes
 
 <details>
 <summary>Pycodestyle</summary>
-
+<img src="media/python_check.png" width="40%"><br><br>
 </details>
 
 
@@ -310,7 +310,7 @@ The accesibility of the website was tested with [Wave](https://wave.webaim.org/)
 **Wave results:**<br>
 <details>
 <summary>WAVE Validation</summary>
-<img src="Wave_validation.png" width="30%"><br><br>
+<img src="media/Wave_validation.png" width="30%"><br><br>
 </details>
 
 
