@@ -309,43 +309,9 @@ The accesibility of the website was tested with [Wave](https://wave.webaim.org/)
 
 **Wave results:**<br>
 <details>
-<summary>Home page</summary>
-<img src="media/wave_home.png" width="30%"><br><br>
+<summary>WAVE Validation</summary>
+<img src="Wave_validation.png" width="30%"><br><br>
 </details>
-<details>
-<summary>Products page</summary>
-<img src="media/wave_products.png" width="30%"><br><br>
-</details>
-<details>
-<summary>Login page</summary>
-<img src="media/wave_signin.png" width="30%"><br><br>
-</details>
-<details>
-<summary>Register page</summary>
-<img src="media/wave_register.png" width="30%"><br><br>
-</details>
-<details>
-<summary>About page</summary>
-<img src="media/wave_about.png" width="30%"><br><br>
-</details>
-<details>
-<summary>Contact page</summary>
-The contact page result is showing one error about the map image missing alternative text. I tried to fix it but was unsuccessful.
-<img src="media/wave_contact.png" width="30%"><br><br>
-</details>
-<details>
-<summary>FAQs Page</summary>
-<img src="media/wave_faqs.png" width="30%"><br><br>
-</details>
-<details>
-<summary>Bag Page</summary>
-<img src="media/wave_bag.png" width="30%"><br><br>
-</details>
-<details>
-<summary>Admin Page</summary>
-<img src="media/wave_admin_orders.png" width="30%"><br><br>
-</details><br>
-
 
 
 
