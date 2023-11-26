@@ -136,24 +136,16 @@ deviations from this flowchart. To be specific, the addition of three more featu
 The project uses the PostgreSQL relational database for storing the data.<br>
 
 <details>
-  <summary> Schema</summary>
-<img src="media/diagram.webp" ><br>
+  <summary> Schema Detaiks</summary>
+<img src="media/database_schema.png" ><br>
 </details>
 
 
 
-### Surface<hr>
-
-#### Fonts
-* The fonts I used for this site were imported from [Google Fonts](https://fonts.google.com/):<br>
-**Body:** *Alice, serif*<br>
-**Logo:** *Yesteryear, cursive*<br>
-**Custom error page:** *Josefin Sans, sans-serif*
-
 ## Business Model
 
 * The business model chosen for this project is <b>Business to Customer</b>, as the main purpose of the website is to deliver final products to customers. This model was implemented using an interactive, attractive and intuitive interface that gives the clients an upgraded experience for shopping.<br><br>
-<img src="media/b2c_diagram.png" width="60%">
+<img src="media/Business_model.png" width="60%">
 
 * The DanceAndFitness center offers a diverse selections of dance and fitness packages categorised as *All Products*, *Dance* (Dances are further sub-categorised to Indian, western, and Fitness), *Training* (Trainings are further sub-categorised to GYM, Sports, and group trainings), *Recharge* (Reacharge are further sub-categorised to Food and Relax package).
 
@@ -163,7 +155,7 @@ The project uses the PostgreSQL relational database for storing the data.<br>
 ### Facebook Page
 * The marketing strategy includes a Facebook business page that is intended to create a good image of the bakeshop by posting news and promotions available. By highly promoting the products and always adding new content, the page will increase its popularity and attract more and more customers to buy from the online store. The page can be accessed at [this link](https://www.facebook.com/profile.php?id=61553025716191).<br><br><br>
 *Note, this link may be broken as facebook regularly deletes inactive business pages.
-<img width="80%" src="media/facebook_screenshot.png">
+<img width="80%" src="media/.png">
 
 ## Search Engine Optimisation
 
