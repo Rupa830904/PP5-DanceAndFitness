@@ -153,8 +153,7 @@ The project uses the PostgreSQL relational database for storing the data.<br>
 ## Marketing
 
 ### Facebook Page
-* The marketing strategy includes a Facebook business page that is intended to create a good image of the bakeshop by posting news and promotions available. By highly promoting the products and always adding new content, the page will increase its popularity and attract more and more customers to buy from the online store. The page can be accessed at [this link](https://www.facebook.com/profile.php?id=61553025716191).<br><br><br>
-*Note, this link may be broken as facebook regularly deletes inactive business pages.
+* The marketing strategy includes a Facebook business page that is intended to create a good image of the center by posting news and promotions available. By highly promoting the products and always adding new content, the page will increase its popularity and attract more and more consumers.
 <img width="80%" src="media/FB_Page.jpg">
 
 ## Search Engine Optimisation
