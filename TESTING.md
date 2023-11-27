@@ -258,19 +258,18 @@ The html code of the website was validated using [W3 Markup Validator](https://v
 At the time of deployment the validation have the following outcome:<br><br>
 
 <img src="media/validator_main.png" width="60%"><br><br>
-<img src="media/validator_contact.png" width="60%"><br><br>
 <img src="media/validator_product.png" width="60%"><br><br>
 <img src="media/validator_cart.png" width="60%"><br><br>
-<img src="media/validator_profile.png" width="60%"><br><br>
+<img src="media/validator_contact.png" width="60%"><br><br>
+<img src="media/validator_profiles.png" width="60%"><br><br>
+<img src="media/validator_register.png" width="60%"><br><br>
 
 The following pages have been tested:
 * Home
 * Products
 * Cart
 * Checkout
-* Checkout Success
 * User Profile
-* Admin Orders
 * Contact
 * About
 * Login/Register
