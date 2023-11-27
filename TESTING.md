@@ -257,12 +257,15 @@ The website was tested on different browser to ensure all features work accordin
 The html code of the website was validated using [W3 Markup Validator](https://validator.w3.org/).<br>
 At the time of deployment the validation have the following outcome:<br><br>
 
-<img src="media/pp5_html_validation.png" width="60%"><br><br>
+<img src="media/validator_main.png" width="60%"><br><br>
+<img src="media/validator_contact.png" width="60%"><br><br>
+<img src="media/validator_product.png" width="60%"><br><br>
+<img src="media/validator_cart.png" width="60%"><br><br>
+<img src="media/validator_profile.png" width="60%"><br><br>
 
 The following pages have been tested:
 * Home
 * Products
-* Product details
 * Cart
 * Checkout
 * Checkout Success
@@ -271,7 +274,6 @@ The following pages have been tested:
 * Contact
 * About
 * Login/Register
-* 403/404/500 custom pages
 
 ### CSS
 
