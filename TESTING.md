@@ -261,7 +261,7 @@ At the time of deployment the validation have the following outcome:<br><br>
 <img src="media/validator_product.png" width="60%"><br><br>
 <img src="media/validator_cart.png" width="60%"><br><br>
 <img src="media/validator_contact.png" width="60%"><br><br>
-<img src="media/validator_profiles.png" width="60%"><br><br>
+<img src="media/validator_checkout.png" width="60%"><br><br>
 <img src="media/validator_register.png" width="60%"><br><br>
 
 The following pages have been tested:
@@ -269,7 +269,6 @@ The following pages have been tested:
 * Products
 * Cart
 * Checkout
-* User Profile
 * Contact
 * About
 * Login/Register
