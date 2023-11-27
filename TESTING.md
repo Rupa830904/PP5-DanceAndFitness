@@ -263,6 +263,7 @@ At the time of deployment the validation have the following outcome:<br><br>
 <img src="media/validator_contact.png" width="60%"><br><br>
 <img src="media/validator_checkout.png" width="60%"><br><br>
 <img src="media/validator_register.png" width="60%"><br><br>
+<img src="media/validator_about.png" width="60%"><br><br>
 
 The following pages have been tested:
 * Home
