@@ -385,7 +385,7 @@ The project design has been adapted to all types of devices using Bootstrap pred
 [Back to top ⇧](#overview)
 
 ## Testing
-The comprehensive testing documentation can be found here [TESTING.MD](TESTING.MD)
+The comprehensive testing documentation can be found here [TESTING.MD](TESTING.md)
 
 ## Deployment
 
