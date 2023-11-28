@@ -22,11 +22,9 @@ class StripeWH_Handler:
         """Send the user a confirmation email"""
         cust_email = order.email
         subject = render_to_string(
-            "checkout/confirmation_emails/confirmation_email_subject.txt",
-            {"order": order},
+            "Dance and Fitness: Order confirnation"
         )
         body = render_to_string(
-            "checkout/confirmation_emails/confirmation_email_body.txt",
             {"order": order, "contact_email": settings.DEFAULT_FROM_EMAIL},
         )
 
@@ -46,7 +44,7 @@ class StripeWH_Handler:
         """
         intent = event.data.object
         pid = intent.id
-        bag = intent.metadata.bag
+        cart = intent.metadata.cart
         save_info = intent.metadata.save_info
 
         # Get the Charge object
@@ -122,7 +120,6 @@ class StripeWH_Handler:
                     street_address1=shipping_details.address.line1,
                     street_address2=shipping_details.address.line2,
                     county=shipping_details.address.state,
-                    original_bag=bag,
                     stripe_pid=pid,
                 )
                 for item_id, item_data in json.loads(bag).items():
@@ -140,7 +137,6 @@ class StripeWH_Handler:
                                 order=order,
                                 product=product,
                                 quantity=quantity,
-                                product_size=size,
                             )
                             order_line_item.save()
             except Exception as e:

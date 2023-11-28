@@ -334,4 +334,9 @@ I encountered many challenges during the whole building process of this project.
     Solution:
     I took help from CI tutors to solve and understand how I can dsiplay in bootstrap table and also can iterate the value over the output.
 
+* **reviews not showing in a table**
+   At profile page always the same order number is printed. 
+   Solution:
+   On reviewing the coe I found the issue in profile template. I fixed the order.0 to order.
+
 Back to [README.MD](README.MD)<br>
