@@ -124,13 +124,6 @@ The structure of the website is divided into multiple pages and the content is d
 - The **Checkout page** includes an order summary and a form for personal, delivery and payment details;<br>
 - The **Checkout success** page displays full specification for the successful order;<br>
 
-**FLOWCHARTS**<br>
-The Flowchart for my program was created using <b>LucidChart</b> to help me keep track and visually see how the system works. Due to the nature of development, and room for creativity, the final website has minor 
-deviations from this flowchart. To be specific, the addition of three more features: "About", "Faqs" and "Contact".<br><br>
-<img src="media/flowchart.webp" ><br><br>
-
-### Skeleton<hr>
-
 
 **Database**<br>
 The project uses the PostgreSQL relational database for storing the data.<br>
