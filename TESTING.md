@@ -338,5 +338,8 @@ I encountered many challenges during the whole building process of this project.
    At profile page always the same order number is printed. 
    Solution:
    On reviewing the coe I found the issue in profile template. I fixed the order.0 to order.
+### UNSOLVED ISSUE
+   After adding the webhooks , I can see the payment intent succeeds but the webhook sending fails with Error 500.
+   I couldn't complete the debug in time. It fails to send the order completion email
 
 Back to [README.MD](README.MD)<br>
