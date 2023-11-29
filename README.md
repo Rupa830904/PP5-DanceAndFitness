@@ -136,9 +136,9 @@ deviations from this flowchart. To be specific, the addition of three more featu
 The project uses the PostgreSQL relational database for storing the data.<br>
 
 <details>
-  <summary> Schema Detaiks</summary>
-<img src="media/database_schema.png" ><br>
-</details>
+  <summary> ER diagram</summary>
+<img src="media/ER-diagram.png" ><br>
+</details> 
 
 
 
@@ -198,7 +198,7 @@ By using Agile methodology, I was able to stay organized, work efficiently and f
 
 <img width="80%" src="media/kanban-board.png">
 <br> <br>
-<img width="80%" src="media/user-stories.png">
+<img width="80%" src="media/user_stories.png">
 
 <details>
 <summary><strong>Sprints Details</strong></summary>
