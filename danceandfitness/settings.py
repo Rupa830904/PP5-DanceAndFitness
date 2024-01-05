@@ -33,9 +33,9 @@ SECRET_KEY = 'django-insecure-5sot&%ov@wz6hh10fz1f=7+rho58e_q5c+mvua-e8e-h(6i6x8
 
 # SECURITY WARNING: don't run with debug turned on in production!
 #DEBUG = False
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ['8000-rupa830904-pp5danceandf-q1vb1v6xl1e.ws-eu105.gitpod.io','dancenfitness-708b83044c2d.herokuapp.com','8000-rupa830904-pp5danceandf-q1vb1v6xl1e.ws-eu106.gitpod.io']
+ALLOWED_HOSTS = ['8000-rupa830904-pp5danceandf-q1vb1v6xl1e.ws-eu105.gitpod.io','dancenfitness-708b83044c2d.herokuapp.com','8000-rupa830904-pp5danceandf-q1vb1v6xl1e.ws-eu106.gitpod.io','8000-rupa830904-pp5danceandf-q2lmzgqwfec.ws-eu107.gitpod.io']
 
 
 # Application definition
