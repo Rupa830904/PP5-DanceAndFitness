@@ -16,3 +16,14 @@ class Contact(models.Model):
 
     def __str__(self):
         return self.name
+
+
+class Subscribe(models.Model):
+    name = models.CharField(max_length=80)
+    email = models.EmailField()
+
+    class Meta:
+        ordering = ["-email"]
+
+    def __str__(self):
+        return self.name

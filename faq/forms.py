@@ -1,7 +1,7 @@
 from django import forms
 from django.forms.widgets import DateInput
 from django.core.exceptions import ValidationError, ObjectDoesNotExist
-from .models import Contact
+from .models import Contact, Subscribe
 from django.contrib.auth.models import User
 
 
@@ -28,3 +28,16 @@ class ContactForm(forms.ModelForm):
                 self.fields['email'].disabled = True
             if self.instance and self.fields.subscribe is True:
                 self.fields['email'].disabled = False
+
+class SubscribeForm(forms.ModelForm):
+    """ Form to ask a question"""
+    class Meta:
+        model = Subscribe
+        fields = ['name', 'email', ]
+        name = forms.CharField()
+        email = forms.CharField()
+
+        labels = {
+            'name': 'name',
+            'email': 'Email',
+        }

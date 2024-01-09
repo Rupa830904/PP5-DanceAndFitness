@@ -2,7 +2,7 @@ from django.shortcuts import render, redirect, reverse
 from django.contrib import messages
 from django.conf import settings
 
-from .forms import ContactForm
+from .forms import ContactForm, SubscribeForm
 
 
 def contact(request):
@@ -27,4 +27,21 @@ def about_us(request):
     """ A view that renders the cart contents page """
 
     return render(request, 'about_us.html')
-# Create your views here.
+
+def subscribe(request):
+
+    subscribe_form = SubscribeForm()
+
+    if request.method == 'POST':
+        subscribe_form = SubscribeForm(request.POST)
+        if subscribe_form.is_valid():
+            subscribe_form.save()
+            messages.success(request, 'Thanks for subscribing us.')
+
+    template = 'subscribe.html'
+    context = {
+        'subscribe_form': subscribe_form,
+    }
+
+    return render(request, template, context)
+
