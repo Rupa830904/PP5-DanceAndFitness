@@ -2,7 +2,7 @@ from django.contrib import admin
 
 # Register your models here.
 
-from .models import Contact
+from .models import Contact, Subscribe
 
 # Register your models here.
 
@@ -18,3 +18,13 @@ class ContactAdmin(admin.ModelAdmin):
 
 
 admin.site.register(Contact, ContactAdmin)
+
+
+class SubscribeAdmin(admin.ModelAdmin):
+    list_display = (
+        'name',
+        'email',
+    )
+
+
+admin.site.register(Subscribe, SubscribeAdmin)

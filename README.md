@@ -124,7 +124,38 @@ The structure of the website is divided into multiple pages and the content is d
 - The **Checkout page** includes an order summary and a form for personal, delivery and payment details;<br>
 - The **Checkout success** page displays full specification for the successful order;<br>
 
+**Wireframes**<br>
+The wireframes for mobile and desktop were created with [Balsamiq](https://balsamiq.com/) tool. 
 
+<details>
+  <summary>Home</summary><br>
+  Desktop<br>
+<img src="media/Home_wireframe.png" ><br>
+  Mobile<br>
+<img src="media/Home_wireframe_mobile.png" ><br>
+</details>
+<details>
+  <summary> Products Page</summary><br>
+  Desktop<br>
+<img src="media/product_wireframe.png" ><br>
+ Mobile<br>
+<img src="media/product_wireframe_mobile.png" ><br>
+</details>
+<details>
+  <summary> Cart Page</summary><br>
+  Desktop<br>
+<img src="media/cart_wireframe.png" ><br>
+ Mobile<br>
+<img src="media/cart_wireframe_mobile.png" ><br>
+</details>
+<details>
+  <summary> Checkout Page</summary><br>
+  Desktop<br>
+<img src="media/checkout_wireframe.png" ><br>
+ Mobile<br>
+<img src="media/checkout_wireframe_mobile.png" ><br>
+</details>
+<br><br>
 **Database**<br>
 The project uses the PostgreSQL relational database for storing the data.<br>
 
