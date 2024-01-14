@@ -78,6 +78,9 @@ This site was created respecting the Five Planes Of Website Design:<br>
 |**Testing & Documentation**                |  ||
 |                                       || As a developer I need to write readme.md so that I can clearly explain my project|
 |                                       || As a developer I must write a testing.md so that all my tests are well described|
+|**Re-Submission**                           |  ||
+|                                       || As a user I can subscribe to the newsletter so that I am updated with all offers|
+
 
 
 **Project Goal:**<br>
@@ -185,6 +188,8 @@ The project uses the PostgreSQL relational database for storing the data.<br>
 I have created a sitemap and robots.txt file to help aid search engines locate the site. To keep user's information safe, any pages that could contain sensitive information has been disallowed in the robots.txt.
 
 The purpose of the About Us page was not so much designed in mind to inform the user, but more so to have an opportunity to use some keywords, and link the user to any other relevant website, all to help boost the site's ranking in search engine results.
+
+Meta tags have been added to base.html as required for SEO.
 
 The initial keywords and phrases I came up with were:<br>
 ### Short Tail Keywords
