@@ -34,7 +34,8 @@ class Package(models.Model):
 
     def average_rating(self):
         from django.db.models import Avg
-        return Review.objects.filter(product=self).aggregate(Avg('rating'))['rating__avg']
+        return Review.objects.filter(product=self) \
+            .aggregate(Avg('rating'))['rating__avg']
 
     def show_reviews(self):
         return Review.objects.values_list('comment').filter(product=self)

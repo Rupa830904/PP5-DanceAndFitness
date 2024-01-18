@@ -28,7 +28,10 @@ class Order(models.Model):
                                       null=False,
                                       default=0)
     original_cart = models.TextField(null=False, blank=False, default='')
-    stripe_pid = models.CharField(max_length=254, null=False, blank=False, default='')
+    stripe_pid = models.CharField(max_length=254,
+                                  null=False,
+                                  blank=False,
+                                  default='')
 
     def _generate_order_number(self):
         """
@@ -41,7 +44,8 @@ class Order(models.Model):
         Update grand total each time a line item is added,
         accounting for delivery costs.
         """
-        self.order_total = self.lineitems.aggregate(Sum('lineitem_total'))['lineitem_total__sum']
+        self.order_total = self. \
+            lineitems.aggregate(Sum('lineitem_total'))['lineitem_total__sum']
         self.save()
 
     def save(self, *args, **kwargs):

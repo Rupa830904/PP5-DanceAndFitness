@@ -28,6 +28,7 @@ def about_us(request):
 
     return render(request, 'about_us.html')
 
+
 def subscribe(request):
 
     subscribe_form = SubscribeForm()
@@ -44,4 +45,3 @@ def subscribe(request):
     }
 
     return render(request, template, context)
-

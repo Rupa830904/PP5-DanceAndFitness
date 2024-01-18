@@ -9,6 +9,13 @@ class OrderForm(forms.ModelForm):
                   'street_address1', 'street_address2',
                   'town_or_city', 'postcode', 'country',
                   'county',)
+        labels = {
+            'full_name': 'full_name',
+            'email': 'email',
+            'phone_number': 'phone_number',
+            'country': 'country',
+            'county': 'county',
+        }
 
     def __init__(self, *args, **kwargs):
         """
@@ -31,9 +38,9 @@ class OrderForm(forms.ModelForm):
         self.fields['full_name'].widget.attrs['autofocus'] = True
         for field in self.fields:
             if self.fields[field].required:
-                    placeholder = f'{placeholders[field]} *'
+                placeholder = f'{placeholders[field]} *'
             else:
-                    placeholder = placeholders[field]
+                placeholder = placeholders[field]
             self.fields[field].widget.attrs['placeholder'] = placeholder
             self.fields[field].widget.attrs['class'] = 'stripe-style-input'
             self.fields[field].label = False

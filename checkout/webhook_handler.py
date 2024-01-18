@@ -25,8 +25,8 @@ class StripeWH_Handler:
           'confirmation_emails/confirmation_email_subject.txt',
           {'order': order})
         body = render_to_string(
-            'confirmation_emails/confirmation_email_body.txt',
-           {'order': order, 'contact_email': settings.DEFAULT_FROM_EMAIL},
+          'confirmation_emails/confirmation_email_body.txt',
+          {'order': order, 'contact_email': settings.DEFAULT_FROM_EMAIL},
         )
         send_mail(subject, body, settings.DEFAULT_FROM_EMAIL, [cust_email])
 
@@ -46,14 +46,9 @@ class StripeWH_Handler:
         pid = intent.id
         cart = intent.metadata.cart
         save_info = intent.metadata.save_info
-        
-
         # Get the Charge object
         stripe_charge = stripe.Charge.retrieve(intent.latest_charge)
-        #print(stripe_charge)
-
         billing_details = stripe_charge.billing_details  # updated
-        #shipping_details = intent.shipping
         order_total = round(intent.amount / 100, 2)
         print(order_total)
 
@@ -150,4 +145,5 @@ class StripeWH_Handler:
         """
         Handle the payment_intent.payment_failed webhook from Stripe
         """
-        return HttpResponse(content=f'Webhook received: {event["type"]}', status=200)
+        return HttpResponse(
+            content=f'Webhook received: {event["type"]}', status=200)

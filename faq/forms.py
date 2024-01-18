@@ -29,6 +29,7 @@ class ContactForm(forms.ModelForm):
             if self.instance and self.fields.subscribe is True:
                 self.fields['email'].disabled = False
 
+
 class SubscribeForm(forms.ModelForm):
     """ Form to ask a question"""
     class Meta:
