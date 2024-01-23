@@ -301,7 +301,7 @@ At the time of deployment the python code validation have the following outcomes
 
 <details>
 <summary>Pycodestyle</summary>
-<img src="media/python_check.png" width="40%"><br><br>
+<img src="media/PEP8_final_validation.png" width="40%"><br><br>
 </details>
 
 
